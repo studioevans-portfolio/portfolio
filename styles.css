@@ -167,6 +167,11 @@ footer{
 nav{
     display:none;
 }
-
+    
+#contact a,
+#contact a:visited {
+    color: #ff7a00;
+    text-decoration: none;
+}
 }
 ```
