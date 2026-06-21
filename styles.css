@@ -70,6 +70,12 @@ nav{
     gap:24px;
 }
 
+
+h1 a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
 nav a{
     color:#ffffff;
     text-decoration:none;
