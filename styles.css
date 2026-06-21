@@ -40,21 +40,6 @@ nav a{
     text-decoration:none;
 }
 
-a,
-a:visited {
-    color: #ff7a00;
-    text-decoration: none;
-}
-
-a:hover {
-    opacity: 0.8;
-}
-
-a:active {
-    color: #ff7a00;
-}
-
-
 
 
 .hero{
