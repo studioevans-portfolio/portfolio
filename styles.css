@@ -40,8 +40,13 @@ nav{
 }
 
 nav a{
-    color:#ff7a00;
+    color:#ffffff;
     text-decoration:none;
+}
+
+nav a:hover {
+    color:#ff7a00;
+     text-decoration:none;
 }
 
 
