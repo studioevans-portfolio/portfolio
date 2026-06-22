@@ -1,344 +1,425 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-::selection {
-    background: #ec9006;
-    color: #ffffff;
-}
-
-::-moz-selection {
-    background: #BA6804;
-    color: #ffffff;
-}
-
-.card img{
-    width:100%;
-    aspect-ratio:8/5;
-    object-fit:cover;
-    display:block;
-}
-
-
-.divider{
-    width:100%;
-    height:1px;
-    background:#222;
-    margin:0 auto;
-}
-
-
-
-nav{
-    display:flex;
-    gap:24px;
-}
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#000;
-}
-
-
-
-.menu-toggle{
-    display:none;
-    background:none;
-    border:none;
-    color:white;
-    font-size:2rem;
-    cursor:pointer;
-}
-
-
-
-h1, h2, h3, h4 {
-  font-family: "Stack Sans Notch", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-color: white;
-}
-
-body {
-  font-family: "helvetica", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-	 background:#000000;
-	color: white;
-}
-
-
-
-.container{
-    width:min(1100px,90%);
-    margin:auto;
-}
-
-header{
-    padding:30px 0;
-    position:sticky;
-    top:0;
-    background:#000000;
-}
-
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-
-h1 a{
-    color:#ffffff;
-    text-decoration:none;
-}
-
-nav a{
-    color:#ffffff;
-    text-decoration:none;
-}
-
-nav a:hover {
-    color:#4392F1;
-     text-decoration:none;
-}
-
-
-
-.hero{
- padding: 60px 0px 60px 0px;
-}
-
-.hero-grid{
-    display:grid;
-	  grid-template-columns:1fr 400px;
-    gap:60px;
-    align-items:center;
-}
-
-.hero img{
-    width:100%;
-    border-radius:20px;
-	padding: 0px 0px 0px 0px;
-}
-
-.eyebrow{
-    color:#999;
-    margin-bottom:20px;
-}
-
-
-@media(max-width:768px){
-.eyebrow{
-    color:#999;
-    margin-bottom:20px;
-	margin-top: -45px;
-	}
-}
-
-
-
-.hero h2{
-    font-size:4rem;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.buttons{
-    margin-top:30px;
-    display:flex;
-    gap:15px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Evans | Digital Experience Designer</title>
+    <link rel="stylesheet" href="styles.css">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+	
+	</head>
 	
 	
-}
-
-.button{
-    background:white;
-    color:black;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-
-.button:hover {
-    background: #BA6804;
-    color: white;
-    transition: 0.3s ease;
-}
-
-.secondary{
-    background:#222;
-    color:white;
-}
-
-
-
-.section {
-    padding: 60px 0px 60px 0px;
-}
-
-
-.section #about{
-    padding: 90px 0px 60px 0px;
-}
-
-.section #skills {
-    padding: 0px 0px 60px 0px;
-}
-
-#skills #about {
-    padding: 0px 0px 10px 0px;
-}
-
-
+	
+	
+	
+<body>
 
 	
+	<!-- NAV BAR -->
+	
+<header id="top">
+	
+    <div class="container">
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-top:0px;
-}
+        <h1><a href="#">George Evans</a></h1>
 
-.skill{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px 40px;
-    border:1px solid #ffffff;
-    border-radius:999px;
-    background:transparent;
-    color:#ffffff;
-    font-size:1rem;
-    font-weight:500;
-    transition:all 0.3s ease;
-    cursor:default;
-}
+        <button class="menu-toggle" aria-label="Open menu">
+            ☰
+        </button>
 
-.skill:hover{
-    background:#BA6804;
-    border-color:#BA6804;
-    color:#ffffff;
-    transform:translateY(-2px);
-}
+        <nav id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+	
+	
+	
+	<!-- HERO -->
+	
+	
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="eyebrow">Digital Designer | UX/UI | Web Development</p>
+            <h2>Designing websites, digital products and user experiences.</h2>
+
+            <p>
+                Nearly a decade of experience delivering websites,
+                branding, UX/UI and digital experiences across public
+                and private sector organisations.
+            </p>
+
+            <div class="buttons">
+                <a href="#portfolio" class="button">View Work</a>
+                <a href="cv/george-evans-cv.pdf" class="button secondary" target="_blank">Download CV</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/ge-headshot.jpg" alt="George Evans">
+        </div>
+    </div>
+</section>
+
+	
+	
+	
+	
+	<!-- SKILLS -->
+	
+	<section id="skills">
+    <div class="container">
+
+        <div class="skills">
+	    <span class="skill">Design</span>
+					<span class="skill">UX/UI</span>
+			            <span class="skill">Web Design</span>
+			<span class="skill">Web Development</span>
+			   <span class="skill">Adobe Creative Suite</span>
+			    <span class="skill">XD / Figma</span>
+			         <span class="skill">HTML / CSS</span>
+            <span class="skill">Branding</span>
+					    <span class="skill">Marketing</span>
+				    <span class="skill">AI</span>
+		
+
+        </div>
+
+    </div>
+</section>
+	
+	
+	
+
+	
+	
+	
+	
+	<!-- ABOUT --> 
+	
+	
+<section id="about" class="section">
+    <div class="container">
+        <h3>About</h3>
+
+        <p>
+          10+ years of experience designing and developing websites, visual identities, and digital experiences for growing businesses. Skilled in branding, UX/UI, front-end development, SEO fundamentals, and e-commerce, with hands-on experience delivering projects across WordPress, Shopify, and Squarespace.
+      </p>
+
+        <p>
+            My background combines UX, UI, web development, digital
+            marketing and project leadership, helping organisations
+            improve their digital presence and customer experience.
+        </p>
+    </div>
+</section>
+
+	
+	
+	
+	
+	
+	
+	<!-- DIVIDER -->
+		
+<div class="divider"></div>
+	
+	
+	
+	
+	
+	<!-- EXPERIENCE -->
+	
+	
+<section id="experience" class="section">
+    <div class="container">
+        <h3>Experience</h3>
+
+        <div class="job">
+            <h4>Copper Consultancy</h4>
+            <p>Web Designer and Creative Services Manager · 2024–Present</p>
+        </div>
+		
+		<div class="job">
+            <h4>Studio Evans</h4>
+            <p>Freelance Web Designer and Digital Consultant · 2016–Present</p>
+        </div>
+
+        <div class="job">
+            <h4>RSK Group</h4>
+            <p>Digital Designer · 2022–2024</p>
+        </div>
+
+        <div class="job">
+            <h4>Type One Style</h4>
+            <p>Head of Design · 2021–2022</p>
+        </div>
+
+        <div class="job">
+            <h4>mmunic</h4>
+            <p>Digital Designer · 2020–2021</p>
+        </div>
+	
+	
+	  <div class="job">
+            <h4>Sizzix</h4>
+            <p>Web and Print Designer · 2019–2020</p>
+        </div>
+	
+	
+	
+	  <div class="job">
+            <h4>Digitally Disruptive</h4>
+            <p>Junior Graphic Designer · 2018–2019</p>
+        </div>
+		
+		
+		<div class="job">
+            <h4>View Creative Agency</h4>
+            <p>Internship · 2014</p>
+        </div>
+		
+    </div>
+</section>
+
+	
+	
+	
+	
+	<!-- DIVIDER -->
+		
+<div class="divider"></div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- PORTFOLIO -->
+	
+<section id="portfolio" class="section">
+    <div class="container">
+        <h3>Selected Work</h3>
+
+        <div class="portfolio-grid">
+
+            <div class="card">
+             <img src="images/prepandcoat.png" alt="Prep & Coat website">
+                <h4>Prep and Coat</h4>
+                <p>Branding · UX/UI · Development · Shopify</p>
+                <p>Developed the brand identity and designed and built a  Shopify ecommerce website for a specialist industrial supplier.</p>
+                <a href="https://prepandcoat.com/">Visit Website →</a>
+            </div>
+
+            <div class="card">
+          <img src="images/hw.png" alt="Heathrow West website">
+                <h4>Heathrow West</h4>
+				<p>WordPress · Web Design · Development</p>
+                <p>Produced during my employment with Copper Consultancy, I designed and built the Heathrow West website in WordPress, delivering clear, user-focused content and intuitive page layouts.</p>
+                <a href="https://heathrow-west.info/">Visit Website →</a>
+            </div>
+
+          <div class="card">
+                <img src="images/tos.png" alt="Type One Style brand identity">
+                <h4>Type One Style</h4>
+			  <p>WordPress · Web Design · Development</p>
+             <p>Led a full company rebrand, Shopify improvements and email marketing strategy, helping drive a 523% revenue increase.</p>
+             <a href="https://typeonestyle.com/">Visit Website →</a>
+            </div>
+		
+		
+		<div class="card">
+        <img src="images/bathroombay.png" alt="Bathroom Bay brand identity">
+                <h4>Bathroom Bay</h4>
+			<p>Branding · Logo Design · Graphic Design</p>
+                <p>Designed the Bathroom Bay brand identity, developing a modern visual system that reflects the company's focus on quality, trust and bespoke bathroom design.</p>
+                <a href="https://www.bathroombayltd.com/">Visit Website →</a>
+            </div>
+			
+			
+			 <div class="card">
+                <img src="images/bhn.png" alt="Bristol Heat Network website">
+                <h4>Vattenfall</h4>
+				 <p>WordPress · Web Design · Development</p>
+                <p>While employed by Copper Consultancy, I designed and developed the Bristol Heat Network website in WordPress, creating an accessible and engaging digital experience that communicated the benefits and progress of a city-wide low-carbon energy programme.</p>
+                <a href="https://www.bristolheatnetwork.co.uk/">Visit Website →</a>
+            </div>
+			
+			
+			<div class="card">
+                <img src="images/rsk.gif" alt="RSK Group motion graphic">
+                <h4>RSK Group</h4>
+				<p>After Effects · Motion Graphics · Visual Story Telling</p>
+                <p>Designed and produced a motion graphic for RSK Group to communicate the effects of fossil fuel consumption and raise awareness of the benefits of renewable energy.</p>
+                <a href="https://rskgroup.com/">Visit Website →</a>
+            </div>
 
 
+        </div>
+    </div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- DIVIDER -->
+		
+<div class="divider"></div>
+	
+	
+	
+	
+	
+<!-- TESTIMONIALS -->
+	
+	<section id="testimonials" class="section">
+    <div class="container">
+        <h3>Testimonials</h3>
 
+        <p>
+         “He produced numerous commercially-perfect website concepts, digital campaign adverts and print collateral for some of the biggest brands in the UK.”
+		<br><br>
+			<b>Samuel Sutton</b>
+			<br>
+		Digitally Disruptive
+      </p>
+	<br>
+		
+		<p>
+		“George helped bring my company vision to life. I’m exceptionally happy with his design services and definitely won’t be going to anyone else!”
 
+			<br><br>
+		<b>Jon O’Brien</b>
+			<br>
+		OB Plumbing and Heating
+</p>
+	<br>
+		
+		<p>
+		“George is an absolute pleasure to work with, he is undoubtedly the most experienced graphic designer and web developer I have experienced.”
+		<br><br>
+		<b>Danielle Davies</b>
+			<br>
+		Bathroom Bay”
+</p>
+	<br>
+		
+		<p>
+		“What I appreciated most from George was his willingness to make recommendations to improve both our email marketing and web design strategies.”
+		<br><br>
+		<b>Bryan Jung</b>
+			<br>
+		Ellison
+</p>
+		<br>	
+		
+				<p>
+		“George is highly competent at front-end Shopify theme customization and branding work, and can quickly generate a bank of formatted assets.”
+		<br><br>
+		<b>Charlie Cawsey</b>
+			<br>
+		Type One Style
+</p>
+	<br>
+		
+						<p>
+	“I had the pleasure of working with George for six months, and in that time his commitment to creating excellent, engaging designs and enhancing his skills, knowledge and experience to benefit our clients has shone through.”
+		<br><br>
+		<b>Charlotte Girow</b>
+			<br>
+		mmunicMail
+</p>
+	<br>		
+		
+								<p>
+“George is a talented designer with an in-depth knowledge of a variety of platforms. He brings a creative mindset to every task and uses his skills to ensure he addresses the needs of the brief with an innovative mindset.”
+		<br><br>
+		<b>Charlie Bull</b>
+			<br>
+		Sizzix
+</p>
+	<br>
+		
+										<p>
+“I found him to be extremely approachable and highly skilled in his design work. We worked together on projects that required him to showcase his website design, ad design and design-for-print skills, of which were always of the highest standard.”
+		<br><br>
+		<b>Phil Newton</b>
+			<br>
+		cProgress
+</p>
+	<br>
+		
+												<p>
+“George has an incredible energy that he brings to the team including an abundance of creative ideas that he brings to life through well-thought-through conceptual designs.”
+		<br><br>
+		<b>Hayley Littler</b>
+			<br>
+		RSK Group
+</p>
+		</div>
+	</section>
+	
+		
+		
+	<!-- DIVIDER -->
+		
+<div class="divider"></div>
+		
+		
+		
+		
+		
+		
+<!-- CONTACT -->
 
+<section id="contact" class="section">
+    <div class="container">
+        <h3>Contact</h3>
 
+        <p>
+            Interested in working together or discussing opportunities?
+        </p>
 
-.section h3{
-    font-size:2rem;
-    margin-bottom:40px;
-}
+        <a href="mailto:design.george.evans@gmail.com">
+            design.george.evans@gmail.com
+        </a>
+    </div>
+</section>
 
-.job{
-    margin-bottom:40px;
-}
+		
+	</body>		
+		
+<footer>
+    <div class="container">© Studio Evans 2026</div>
+		
 
-.portfolio-grid{
-    display:grid;
-	  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
+</footer>
 
-.card{
-      background:#171717;
-    border-radius:15px;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-}
+	
+	
+		<script>
+const menuBtn = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
 
-.card img{
-    width:100%;
-    display:block;
-}
-
-.card h4,
-.card p,
-.card a{
-    padding:0 20px;
-}
-
-.card h4{
-    margin-top:20px;
-	margin-bottom: 15px;
-}
-
-.card a{
-    display:block;
-    padding-bottom:20px;
-    color:white;
-    margin-top:35px;
-}
-
-footer{
-    padding:60px 0;
-    border-top:1px solid #222;
-}
-
-#contact a,
-#contact a:visited {
-    color:#4392F1;
-    text-decoration:none;
-}
-
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    nav{
-        display:none;
-    }
-
-    nav.active{
-        display:flex;
-        flex-direction:column;
-        position:absolute;
-        top:100%;
-        right:0;
-        width:200px;
-        background:#171717;
-        padding:20px;
-        border-radius:12px;
-        gap:15px;
-        z-index:1001;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h2{
-        font-size:2.5rem;
-    }
-
-    header .container{
-        position:relative;
-    }
-
-    .eyebrow{
-        margin-top:-45px;
-    }
-
-    #testimonials p{
-        margin-bottom:40px;
-    }
-}
+menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+</script>
+	
+</html>
