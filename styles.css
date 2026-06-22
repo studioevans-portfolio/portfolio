@@ -10,12 +10,12 @@ html {
 
 
 ::selection {
-    background: #ec9006;
+    background: #14B8A6;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #BA6804;
+    background: #14B8A6;
     color: #ffffff;
 }
 
@@ -115,7 +115,7 @@ nav a{
 }
 
 nav a:hover {
-    color:#BA6804;
+    color:#14B8A6;
      text-decoration:none;
 }
 
@@ -187,7 +187,7 @@ a:focus {
 
 a.button {
     display:inline-block;
-    background:#BA6804;
+    background:#14B8A6;
     color:#ffffff;
     padding:12px 24px;
     text-decoration:none;
@@ -256,8 +256,8 @@ a.button.secondary:hover {
 }
 
 .skill:hover{
-    background:#BA6804;
-    border-color:#BA6804;
+    background:#14B8A6;
+    border-color:#14B8A6;
     color:#ffffff;
     transform:translateY(-2px);
 }
@@ -419,7 +419,7 @@ h1 a:hover,
 nav a:hover,
 .card a:hover,
 #contact a:hover {
-    color:#BA6804;
+    color:#14B8A6;
 }
 
 
