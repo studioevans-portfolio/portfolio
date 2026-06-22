@@ -178,7 +178,8 @@ nav a:hover {
 	
 }
 
-.button{
+a.button {
+    display:inline-block;
     background:#BA6804;
     color:#ffffff;
     padding:12px 24px;
@@ -186,16 +187,20 @@ nav a:hover {
     border-radius:8px;
 }
 
-
-.button:hover {
-    background: #ffffff;
-    color: black;
-    transition: 0.3s ease;
+a.button:hover {
+    background:#ffffff;
+    color:#000000;
 }
 
-.secondary{
+a.button.secondary {
     background:#222;
-    color:white;
+    color:#ffffff;
+}
+
+
+a.button.secondary:hover {
+    background:#ffffff;
+    color:#000000;
 }
 
 
@@ -397,8 +402,4 @@ footer{
     right:20px;
     opacity:0.08;
     font-family:helvetica, serif;
-}
-	
-	
-	
 }
