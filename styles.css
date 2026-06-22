@@ -122,6 +122,7 @@ nav a:hover {
 
 .hero-grid{
     display:grid;
+	  grid-template-columns:1fr 400px;
     gap:60px;
     align-items:center;
 }
@@ -188,6 +189,11 @@ nav a:hover {
     padding: 60px 0px 60px 0px;
 }
 
+
+.section #about{
+    padding: 90px 0px 60px 0px;
+}
+
 .section #skills {
     padding: 0px 0px 60px 0px;
 }
@@ -246,6 +252,7 @@ nav a:hover {
 
 .portfolio-grid{
     display:grid;
+	  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
@@ -316,60 +323,22 @@ footer{
     }
 
     .hero-grid{
+        grid-template-columns:1fr;
     }
 
     .hero h2{
         font-size:2.5rem;
     }
-	
-	header .container{
-    position:relative;
-}
 
-	
-	.back-to-top{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:50px;
-    height:50px;
-    border:1px solid #fff;
-    border-radius:50%;
-    text-decoration:none;
-    color:#fff;
-    font-size:24px;
-    margin:0 auto;
-    transition:0.3s;
-}
+    header .container{
+        position:relative;
+    }
 
-.back-to-top:hover{
-    transform:translateY(-4px);
-	color:#fff;
-	border:1px solid #BA6804;
-}
-	
-	
-	
-	@media(max-width:768px){
-.skill{
-   display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px 40px;
-    border:1px solid #ffffff;
-    border-radius:999px;
-    background:transparent;
-    color:#ffffff;
-    font-size:1rem;
-    font-weight:500;
-    transition:all 0.3s ease;
-    cursor:default;
-	}
-	}
-			
-@media (max-width:768px){
-    #testimonials #experience p{
-        margin-bottom: 40px;
-		}
-		}
+    .eyebrow{
+        margin-top:-45px;
+    }
+
+    #testimonials p{
+        margin-bottom:40px;
+    }
 }
