@@ -35,11 +35,6 @@ html {
 }
 
 
-a,
-a:visited {
-    color: inherit;
-    text-decoration: none;
-}
 
 a:hover {
     color: #BA6804;
@@ -124,6 +119,18 @@ nav a:hover {
      text-decoration:none;
 }
 
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #BA6804;
+}
 
 
 .hero{
@@ -303,14 +310,12 @@ a.button.secondary:hover {
 .card a{
     display:block;
     padding-bottom:20px;
+	 margin-top:auto;
+    padding:20px 20px 20px;
     color:white;
-    margin-top:35px;
+    margin-top:auto;
 }
 
-footer{
-    padding:60px 0;
-    border-top:1px solid #222;
-}
 
 #contact a,
 #contact a:visited {
@@ -374,8 +379,11 @@ footer{
 .testimonial-card{
     background:#171717;
     border-radius:15px;
-    padding:30px;
+    padding:20px;
     position:relative;
+
+    display:flex;
+    flex-direction:column;
 }
 
 .testimonial-card p{
@@ -385,6 +393,7 @@ footer{
 }
 
 .testimonial-card h4{
+      margin-top:auto;
     margin-bottom:5px;
     color:#fff;
 }
@@ -402,4 +411,19 @@ footer{
     right:20px;
     opacity:0.08;
     font-family:helvetica, serif;
+}
+
+a:hover,
+a:focus,
+h1 a:hover,
+nav a:hover,
+.card a:hover,
+#contact a:hover {
+    color:#BA6804;
+}
+
+
+footer{
+    padding:60px 0;
+    border-top:1px solid #222;
 }
