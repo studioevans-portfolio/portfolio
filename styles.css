@@ -127,7 +127,7 @@ nav a:hover {
     align-items:center;
 }
 
-.hero img{
+#headshot {
     width:100%;
     border-radius:20px;
 	padding: 0px 0px 0px 0px;
@@ -148,6 +148,11 @@ nav a:hover {
 }
 
 
+@media(max-width:768px){
+#headshot {
+    max-width: 280px;
+}
+}
 
 .hero h2{
     font-size:4rem;
