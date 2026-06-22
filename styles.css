@@ -179,8 +179,8 @@ nav a:hover {
 }
 
 .button{
-    background:white;
-    color:black;
+    background:#BA6804;
+    color:#ffffff;
     padding:12px 24px;
     text-decoration:none;
     border-radius:8px;
@@ -188,8 +188,8 @@ nav a:hover {
 
 
 .button:hover {
-    background: #BA6804;
-    color: white;
+    background: #ffffff;
+    color: black;
     transition: 0.3s ease;
 }
 
