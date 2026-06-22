@@ -35,6 +35,16 @@ html {
 }
 
 
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BA6804;
+}
+
 
 nav{
     display:flex;
