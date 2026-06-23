@@ -186,7 +186,7 @@ a:focus {
     align-items:center;
 }
 
-#headshot {
+#rsk-connect-logo {
     width:100%;
     border-radius:20px;
 	padding: 0px 0px 0px 0px;
@@ -208,7 +208,7 @@ a:focus {
 
 
 @media(max-width:768px){
-#headshot {
+#rsk-connect-logo {
     max-width: 280px;
 }
 }
@@ -259,7 +259,7 @@ a.button.secondary:hover {
 }
 
 
-.section #about{
+.section #rsk{
     padding: 90px 0px 60px 0px;
 }
 
@@ -267,7 +267,7 @@ a.button.secondary:hover {
     padding: 0px 0px 60px 0px;
 }
 
-#skills #about {
+#skills #rsk {
     padding: 0px 0px 10px 0px;
 }
 
@@ -381,44 +381,20 @@ a.button.secondary:hover {
         margin-top:-45px;
     }
 
-    #testimonials p{
-        margin-bottom:40px;
-    }
-	
-}
-	
-	
-	.testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
 }
 
-.testimonial-card{
-    background:#171717;
-    border-radius:15px;
-    padding:20px;
-    position:relative;
 
-    display:flex;
-    flex-direction:column;
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
-.testimonial-card p{
-    line-height:1.7;
-    margin-bottom:25px;
-    color:#ddd;
-}
-
-.testimonial-card h4{
-      margin-top:auto;
-    margin-bottom:5px;
-    color:#fff;
-}
-
-.testimonial-card span{
-    color:#999;
-    font-size:0.95rem;
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
 }
 
 
