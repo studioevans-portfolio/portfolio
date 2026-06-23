@@ -36,6 +36,37 @@ html {
 
 
 
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 1;
+
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    border-color: #666;
+}
+
 a:hover {
     color: #5FAD56;
 }
@@ -109,13 +140,24 @@ h1 a{
     text-decoration:none;
 }
 
+
+h4 {
+	font-size: 19px;
+}
+
+
+.tags {
+	font-size:14px;
+	margin-top: -10px;
+}
+
 nav a{
     color:#ffffff;
     text-decoration:none;
 }
 
 nav a:hover {
-    color:#14B8A6;
+    color:#5FAD56;
      text-decoration:none;
 }
 
