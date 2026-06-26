@@ -6,6 +6,7 @@
 	 <link rel="icon" href="images/favicon.ico">
     <title>George Evans | Digital Designer</title>
     <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="js/cookie-banner.js">
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,14 +23,20 @@
 	
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0LRR07BYT"></script>
+
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+
+// Default consent
+gtag('consent', 'default', {
+  analytics_storage: 'denied'
+});
+
 gtag('js', new Date());
 
 gtag('config', 'G-W0LRR07BYT');
 </script>
-	
 	
 	
 	</head>
@@ -536,5 +543,27 @@ menuBtn.addEventListener('click', () => {
 
 
 </footer>
+	
+	
+	
+	
+	<div id="cookie-banner">
+  <div class="cookie-content">
+    <h3>🍪 Cookies</h3>
+
+    <p>
+      Studio Evans uses Google Analytics to understand how visitors use this website.
+      Analytics cookies will only be used if you choose to accept.
+      <a href="privacy.html">Privacy & Cookies</a>
+    </p>
+
+    <div class="cookie-buttons">
+      <button id="acceptCookies">Accept</button>
+      <button id="rejectCookies">Reject</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/cookie-banner.js"></script>
 	</body>		
 </html>
