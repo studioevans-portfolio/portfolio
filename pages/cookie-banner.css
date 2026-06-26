@@ -1,7 +1,7 @@
 #cookie-banner {
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 17%;
   transform: translateX(-50%);
 
   width: 90%;
@@ -51,4 +51,31 @@
 
 #rejectCookies:hover {
   background: #f5f5f5;
+}
+
+
+
+@media (max-width:768px){
+	#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  max-width: 550px;
+
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  z-index: 9999;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
