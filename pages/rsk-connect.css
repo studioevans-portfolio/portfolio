@@ -297,12 +297,6 @@ a.button.secondary:hover {
     cursor:default;
 }
 
-.skill:hover{
-    background:#5FAD56;
-    border-color:#5FAD56;
-    color:#ffffff;
-    transform:translateY(-2px);
-}
 
 
 
