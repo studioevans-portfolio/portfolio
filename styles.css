@@ -68,7 +68,7 @@ html {
 }
 
 a:hover {
-    color: #0164DF;
+    color: #0164DF !important;
 }
 
 
