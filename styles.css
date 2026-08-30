@@ -247,7 +247,7 @@ a.button.secondary {
 
 a.button.secondary:hover {
     background:#5FAD56;
-    color:#fff !important;
+    color:#000000 !important;
 }
 
 
@@ -469,4 +469,98 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transform: none;
+
+  width: auto;
+  max-width: 420px;
+
+  background: #fff;
+  color: #000;
+  padding: 18px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  z-index: 9999;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#cookie-banner h3 {
+  color: #000;
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#acceptCookies {
+  background: #5FAD56;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+#acceptCookies:hover {
+  background: #333;
+}
+
+#rejectCookies {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+#rejectCookies:hover {
+  background: #333;
+  color: #fff;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  #cookie-banner {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: auto;
+    max-width: none;
+
+    padding: 16px;
+    gap: 12px;
+  }
+
+  #cookie-banner h3 {
+    font-size: 17px;
+  }
+
+  #cookie-banner p {
+    font-size: 12px;
+  }
+
+  #acceptCookies,
+  #rejectCookies {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
