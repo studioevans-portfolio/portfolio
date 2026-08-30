@@ -10,20 +10,14 @@ html {
 
 
 ::selection {
-    background: #5FAD56;
+    background: #0164DF;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #5FAD56;
+    background: #0164DF;
     color: #ffffff;
 }
-
-
-
-
-
-
 
 .card img{
     width:100%;
@@ -31,14 +25,12 @@ html {
     object-fit:cover;
     display:block;
 }
-low: hidden;
-}
 
 
 .divider{
     width:100%;
     height:1px;
-    background:#3d5943;
+    background:#222;
     margin:0 auto;
 }
 
@@ -76,7 +68,7 @@ low: hidden;
 }
 
 a:hover {
-    color: #5FAD56;
+    color: #0164DF !important;
 }
 
 
@@ -89,14 +81,15 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:#1e2620;
+    background:#000;
 }
 
 
 
 #header-logo {
-    width: 225px;
+    width: 170px;
 }
+
 
 
 .menu-toggle{
@@ -110,38 +103,20 @@ header{
 
 
 
-
-
-
-h1, h2, h3 {
-  font-family: "BethEllen-Regular", system-ui;
+h1, h2, h3, h4 {
+  font-family: "Stack Sans Notch", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-		line-height: 70px;
   font-style: normal;
 color: white;
 }
 
-body, h4 {
-   font-family: "Noto Serif", serif;
+body {
+  font-family: "helvetica", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-	line-height: 20px;
+  font-weight: 100;
   font-style: normal;
-	 background:#1e2620;
-	color: white;
-}
-
-
-
-
-h5{
-   font-family: "Noto Serif", serif;
-  font-size: 22px;
-  font-weight: 300;
-	line-height: 30px;
-  font-style: normal;
-	 background:#1e2620;
+	 background:#000000;
 	color: white;
 }
 
@@ -156,7 +131,7 @@ header{
     padding:30px 0;
     position:sticky;
     top:0;
-    background:#1e2620;
+    background:#000000;
 }
 
 header .container{
@@ -188,7 +163,7 @@ nav a{
 }
 
 nav a:hover {
-    color:#5FAD56;
+    color:#0164DF;
      text-decoration:none;
 }
 
@@ -202,11 +177,8 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: #5FAD56;
+    color: #0164DF;
 }
-
-
-
 
 
 .hero{
@@ -227,7 +199,7 @@ a:focus {
 }
 
 .eyebrow{
-    color:#fff;
+    color:#999;
     margin-bottom:20px;
 }
 
@@ -262,28 +234,27 @@ a:focus {
 a.button {
     display:inline-block;
     background:#ffffff;
-    color:#000000;
+    color:#000000 !important;
     padding:12px 24px;
     text-decoration:none;
     border-radius:8px;
 }
 
 a.button:hover {
-    background:#5FAD56;
-    color:#ffffff;
+    background:#0164DF;
+    color:#fff !important;
 }
 
 a.button.secondary {
-    background:#5FAD56;
-    color:#ffffff;
+    background:#363737;
+    color:#ffffff !important;
 }
 
 
 a.button.secondary:hover {
-    background:#fff;
-    color:#000000;
+    background:#0164DF;
+    color:#fff !important;
 }
-
 
 
 .section {
@@ -302,6 +273,8 @@ a.button.secondary:hover {
 #skills #about {
     padding: 0px 0px 10px 0px;
 }
+
+
 
 
 .skills{
@@ -327,7 +300,8 @@ a.button.secondary:hover {
     cursor:default;
 }
 
-	
+
+
 
 #skills-mobile .skills {
     display: grid;
@@ -366,12 +340,15 @@ a.button.secondary:hover {
 
 
 
+
 .section h3{
     font-size:2rem;
     margin-bottom:40px;
 }
 
-
+.job{
+    margin-bottom:40px;
+}
 
 .portfolio-grid{
     display:grid;
@@ -380,7 +357,7 @@ a.button.secondary:hover {
 }
 
 .card{
-      background:#191e1a;
+      background:#171717;
     border-radius:15px;
     overflow:hidden;
     display:flex;
@@ -413,15 +390,9 @@ a.button.secondary:hover {
 }
 
 
-
-#insta {
-    width: 40px;
-}
-
-
 #contact a,
 #contact a:visited {
-
+    color:#ffffff;
     text-decoration:none;
 }
 
@@ -465,14 +436,45 @@ a.button.secondary:hover {
         margin-top:-45px;
     }
 
-
+    #testimonials p{
+        margin-bottom:40px;
+    }
 	
 }
 	
 	
-	
+	.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
 
+.testimonial-card{
+    background:#171717;
+    border-radius:15px;
+    padding:20px;
+    position:relative;
 
+    display:flex;
+    flex-direction:column;
+}
+
+.testimonial-card p{
+    line-height:1.7;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.testimonial-card h4{
+      margin-top:auto;
+    margin-bottom:5px;
+    color:#fff;
+}
+
+.testimonial-card span{
+    color:#999;
+    font-size:0.95rem;
+}
 
 
 
@@ -482,7 +484,7 @@ h1 a:hover,
 nav a:hover,
 .card a:hover,
 #contact a:hover {
-
+    color:#5FAD56;
 }
 
 
@@ -507,4 +509,98 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transform: none;
+
+  width: auto;
+  max-width: 420px;
+
+background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 18px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  z-index: 9999;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#cookie-banner h3 {
+  color: #000;
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#acceptCookies {
+  background: #0164DF !important;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+#acceptCookies:hover {
+  background: #0164DF;
+}
+
+#rejectCookies {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+#rejectCookies:hover {
+  background: #0164DF !important;
+  color: #fff;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  #cookie-banner {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: auto;
+    max-width: none;
+
+    padding: 16px;
+    gap: 12px;
+  }
+
+  #cookie-banner h3 {
+    font-size: 17px;
+  }
+
+  #cookie-banner p {
+    font-size: 12px;
+  }
+
+  #acceptCookies,
+  #rejectCookies {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
