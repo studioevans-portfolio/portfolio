@@ -223,14 +223,12 @@ a:focus {
     margin-top:30px;
     display:flex;
     gap:15px;
-	
-	
 }
 
 a.button {
     display:inline-block;
     background:#ffffff;
-    color:#000000;
+    color:#000000 !important;
     padding:12px 24px;
     text-decoration:none;
     border-radius:8px;
@@ -238,20 +236,19 @@ a.button {
 
 a.button:hover {
     background:#5FAD56;
-    color:#ffffff;
+    color:#fff !important;
 }
 
 a.button.secondary {
-    background:#222;
-    color:#ffffff;
+    background:#363737;
+    color:#ffffff !important;
 }
 
 
 a.button.secondary:hover {
     background:#5FAD56;
-    color:#ffffff;
+    color:#fff !important;
 }
-
 
 
 .section {
@@ -296,6 +293,9 @@ a.button.secondary:hover {
     transition:all 0.3s ease;
     cursor:default;
 }
+
+
+
 
 
 
@@ -451,10 +451,8 @@ nav a:hover,
 footer{
     padding:60px 0;
     border-top:1px solid #222;
+
 }
-
-
-
 
 footer p {
     margin: 0;
@@ -472,4 +470,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
