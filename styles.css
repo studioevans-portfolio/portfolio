@@ -20,9 +20,11 @@ html {
 }
 
 
+
 p {
     margin-bottom: 20px;
 }
+
 
 .card img{
     width:100%;
@@ -234,6 +236,15 @@ a:focus {
     margin-top:30px;
     display:flex;
     gap:15px;
+}
+
+
+
+
+.card-buttons{
+    margin: 20px;
+	display:flex;
+	  gap:15px;
 }
 
 a.button {
