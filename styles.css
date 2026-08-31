@@ -175,7 +175,7 @@ nav a:hover {
 
 a,
 a:visited {
-    color: inherit;
+    color: #FFF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
