@@ -84,6 +84,9 @@ header{
     background:#000;
 }
 
+#header-logo {
+    width: 170px;
+}
 
 
 .menu-toggle{
@@ -186,11 +189,6 @@ a:focus {
     align-items:center;
 }
 
-#rsk-connect-logo {
-    width:100%;
-    border-radius:20px;
-	padding: 0px 0px 0px 0px;
-}
 
 .eyebrow{
     color:#999;
@@ -259,44 +257,6 @@ a.button.secondary:hover {
 }
 
 
-.section #rsk{
-    padding: 90px 0px 60px 0px;
-}
-
-.section #skills {
-    padding: 0px 0px 60px 0px;
-}
-
-#skills #rsk {
-    padding: 0px 0px 10px 0px;
-}
-
-
-
-	
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-top:0px;
-}
-
-.skill{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px 40px;
-    border:1px solid #ffffff;
-    border-radius:999px;
-    background:transparent;
-    color:#ffffff;
-    font-size:1rem;
-    font-weight:500;
-    transition:all 0.3s ease;
-    cursor:default;
-}
-
 
 
 
@@ -309,23 +269,6 @@ a.button.secondary:hover {
 }
 
 
-.card{
-      background:#171717;
-    border-radius:15px;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-}
-
-
-.card a{
-    display:block;
-    padding-bottom:20px;
-	 margin-top:auto;
-    padding:20px 20px 20px;
-    color:white;
-    margin-top:auto;
-}
 
 
 #contact a,
@@ -377,18 +320,6 @@ a.button.secondary:hover {
 }
 
 
-.video-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 20px;
-}
 
 
 
