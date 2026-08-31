@@ -19,6 +19,11 @@ html {
     color: #ffffff;
 }
 
+
+p {
+    margin-bottom: 20px;
+}
+
 .card img{
     width:100%;
     aspect-ratio:8/5;
