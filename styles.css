@@ -241,10 +241,11 @@ a:focus {
 
 
 
-.card-buttons{
+.card-buttons {
     margin: 20px;
-	display:flex;
-	  gap:15px;
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
 }
 
 a.button {
