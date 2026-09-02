@@ -251,7 +251,7 @@ a.button {
     display:inline-block;
     background:#ffffff;
     color:#000000 !important;
-    padding:12px 50px;
+    padding:12px 50px !important;
     text-decoration:none;
     border-radius:8px;
 }
