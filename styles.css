@@ -257,6 +257,22 @@ a.button {
     border-radius:8px;
 }
 
+
+
+
+@media (max-width: 412px) {
+    a.button {
+    display:inline-block;
+    background:#ffffff;
+    color:#000000 !important;
+    padding:12px 30px !important;
+    text-decoration:none;
+    border-radius:8px;
+}
+}
+
+
+
 a.button:hover {
     background:#0164DF;
     color:#fff !important;
