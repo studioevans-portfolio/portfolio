@@ -69,14 +69,16 @@ p {
     z-index: 1000;
 }
 
-.back-to-top:hover {
+.back-to-top:hover,
+.back-to-top:focus {
+    color: #fff !important;
     transform: translateY(-3px);
     border-color: #666;
+	text-decoration: none !important;
 }
 
-a:hover {
-    color: #0164DF !important;
-}
+
+
 
 
 nav{
@@ -532,6 +534,10 @@ nav a:hover,
     color:#0164df;
 }
 
+.back-to-top:hover,
+.back-to-top:focus {
+    color: #fff !important;
+}
 
 footer{
     padding:60px 0;
