@@ -33,6 +33,7 @@ html {
 
 p {
     margin-bottom: 20px;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 .small-intro {
@@ -161,7 +162,7 @@ header{
 
 
 h1, h2, h3, h4 {
-  font-family: "Stack Sans Notch", sans-serif;
+  font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -169,11 +170,12 @@ color: white;
 }
 
 body {
-  font-family: "helvetica", sans-serif;
+font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 	 background:#111111;
+	line-height: 25px;
 	color: white;
 }
 
@@ -217,7 +219,10 @@ h4 {
 nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 50px;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+	letter-spacing: 3px;
+	font-size: 0.7rem;
 }
 
 nav a:hover {
@@ -243,6 +248,7 @@ nav a:last-child {
     color: #111 !important;
     padding: 10px 20px;
     border-radius: 8px;
+font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 nav a:last-child:hover {
@@ -318,6 +324,8 @@ a.button {
     padding:12px 50px !important;
     text-decoration:none;
     border-radius:8px;
+	font-size: 0.8rem;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 
@@ -554,6 +562,7 @@ footer{
 }
 
 footer p {
+font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     margin: 0;
     display: flex;
     align-items: center;
@@ -564,6 +573,7 @@ footer p {
 footer a {
     color: #fff;
     text-decoration: none;
+	
 }
 
 footer a:hover {
