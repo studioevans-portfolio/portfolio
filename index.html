@@ -56,7 +56,8 @@ gtag('config', 'G-W0LRR07BYT');
 	<body id="top">
 	<!-- NAV BAR -->
 
-
+<a class="skip-link" href="#main-content">Skip to main content</a>
+		<main id="main-content">
 	
 	<header>
     <div class="container">
@@ -65,9 +66,19 @@ gtag('config', 'G-W0LRR07BYT');
     <img id="header-logo" src="images/studio-evans-logo-white.png" alt="Studio Evans">
 </a>
 
-        <button class="menu-toggle" aria-label="Open menu">
-            ☰
-        </button>
+        
+		
+		
+		<button
+    class="menu-toggle"
+    aria-label="Open menu"
+    aria-expanded="false"
+    aria-controls="mobileNav">
+    ☰
+</button>
+		
+
+		
 
         <nav id="mobileNav">
 			<a href="https://studioevans.co.uk/">Home</a>
@@ -582,16 +593,7 @@ gtag('config', 'G-W0LRR07BYT');
 	
 		
 
-	
-	
-		<script>
-const menuBtn = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
 
-menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-</script>
 	
 	
 
@@ -671,6 +673,31 @@ window.addEventListener('scroll', () => {
 </script>
 		
 		<script src="js/cookie-banner.js"></script>
+		
+				
+		<script>
+const menuBtn = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#mobileNav');
+
+menuBtn.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('active');
+
+    menuBtn.setAttribute('aria-expanded', isOpen);
+    menuBtn.setAttribute(
+        'aria-label',
+        isOpen ? 'Close menu' : 'Open menu'
+    );
+});
+			
+			document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'Open menu');
+        menuBtn.focus();
+    }
+});
+</script>
 </body>	
 		
 </html>
