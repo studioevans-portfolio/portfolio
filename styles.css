@@ -244,16 +244,16 @@ a:focus {
 }
 
 nav a:last-child {
-    background: #fff;
-    color: #111 !important;
+    background: #0164DF;
+    color: #fff !important;
     padding: 10px 20px;
     border-radius: 8px;
 font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 nav a:last-child:hover {
-    background: #0164DF;
-    color: #fff !important;
+    background: #fff;
+    color: #111 !important;
 }
 
 
@@ -319,13 +319,14 @@ nav a:last-child:hover {
 
 a.button {
     display:inline-block;
-    background:#ffffff;
-    color:#111111 !important;
+    background:#0164DF;
+    color:#fff !important;
     padding:12px 50px !important;
     text-decoration:none;
     border-radius:8px;
 	font-size: 0.8rem;
 	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+	letter-spacing: 3px;
 }
 
 
@@ -334,7 +335,7 @@ a.button {
 @media (max-width: 412px) {
     a.button {
     display:inline-block;
-    background:#ffffff;
+    background:#0164DF;
     color:#111111 !important;
     padding:12px 30px !important;
     text-decoration:none;
@@ -345,20 +346,10 @@ a.button {
 
 
 a.button:hover {
-    background:#0164DF;
-    color:#fff !important;
+    background:#fff;
+    color:#111 !important;
 }
 
-a.button.secondary {
-    background:#363737;
-    color:#ffffff !important;
-}
-
-
-a.button.secondary:hover {
-    background:#0164DF;
-    color:#fff !important;
-}
 
 
 .section {
