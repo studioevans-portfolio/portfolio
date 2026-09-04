@@ -623,15 +623,23 @@ menuBtn.addEventListener('click', () => {
 	
 	
 	
-	<div id="cookie-banner">
+	```html
+<div id="cookie-banner">
+  <button id="closeCookies" aria-label="Close cookie banner">&times;</button>
+
   <div class="cookie-content">
     <h3>Cookies</h3>
-<br>
-    <p>Studio Evans uses Google Analytics to understand how visitors use this website.
+
+    <br>
+
+    <p>
+      Studio Evans uses Google Analytics to understand how visitors use this website.
       Analytics cookies will only be used if you choose to accept.
       <a href="pages/privacy/privacy-cookies.html"><strong>Privacy & Cookies</strong></a>
     </p>
-<br>
+
+    <br>
+
     <div class="cookie-buttons">
       <button id="acceptCookies">Accept</button>
       <button id="rejectCookies">Reject</button>
@@ -640,5 +648,7 @@ menuBtn.addEventListener('click', () => {
 </div>
 
 <script src="js/cookie-banner.js"></script>
+```
+
 	</body>		
 </html>
