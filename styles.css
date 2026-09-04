@@ -36,6 +36,12 @@ p {
 	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
+.intro {
+    margin-bottom: 20px;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+
 .small-intro {
 font-size: 0.7rem;
 	letter-spacing: 3px;
@@ -175,7 +181,7 @@ font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-style: normal;
 	 background:#111111;
-	line-height: 25px;
+	line-height: 30px;
 	color: white;
 }
 
@@ -223,11 +229,12 @@ nav {
 	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 	letter-spacing: 3px;
 	font-size: 0.7rem;
+	 transition: transform 0.2s ease;
 }
 
 nav a:hover {
-    color:#0164DF;
      text-decoration:none;
+	 transform: scale(1.06);
 }
 
 
@@ -238,10 +245,7 @@ a:visited {
     transition: color 0.3s ease;
 }
 
-a:hover,
-a:focus {
-    color: #0164DF;
-}
+
 
 nav a:last-child {
     background: #0164DF;
@@ -305,30 +309,39 @@ nav a:last-child:hover {
     margin-top:30px;
     display:flex;
     gap:15px;
+	
 }
 
 
 
 
 .card-buttons {
-    margin: 20px;
-    display: flex;
-    gap: 15px;
+   margin: 20px 20px 30px;
     margin-top: auto;
+    text-align: center;
+	text-align: center;
 }
+
+
 
 a.button {
-    display:inline-block;
-    background:#0164DF;
-    color:#fff !important;
-    padding:12px 50px !important;
-    text-decoration:none;
-    border-radius:8px;
-	font-size: 0.8rem;
-	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-	letter-spacing: 3px;
+    display: inline-block;
+    background: #0164DF;
+    color: #fff !important;
+    padding: 12px 50px !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
+a.button:hover {
+    background: #fff;
+    color: #111 !important;
+    transform: scale(1.05);
+}
 
 
 
@@ -348,7 +361,11 @@ a.button {
 a.button:hover {
     background:#fff;
     color:#111 !important;
+	transition: transform 0.2s ease;
+	
 }
+
+
 
 
 
