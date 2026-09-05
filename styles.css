@@ -399,7 +399,11 @@ nav a:last-child:hover {
 }
 
 
-
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
 
 .card-buttons {
    margin: 20px 20px 30px;
