@@ -282,10 +282,12 @@ nav a:last-child:hover {
     align-items:center;
 }
 
-#headshot {
-    width:100%;
-    border-radius:20px;
-	padding: 0px 0px 0px 0px;
+#hero-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
 }
 
 .eyebrow{
@@ -304,7 +306,7 @@ nav a:last-child:hover {
 
 
 @media(max-width:768px){
-#headshot {
+#hero-image {
     max-width: 280px;
 }
 }
@@ -706,11 +708,11 @@ margin: 0px 20px 0px 0px;
 }
 
 
-
 /* Hero entrance animation */
 
 .hero h1,
 .hero h2,
+.hero .hero-image,
 .hero .intro,
 .hero .buttons {
     opacity: 0;
@@ -723,6 +725,10 @@ margin: 0px 20px 0px 0px;
 }
 
 .hero h2 {
+    animation-delay: 0.2s;
+}
+
+.hero .hero-image {
     animation-delay: 0.2s;
 }
 
@@ -747,6 +753,7 @@ margin: 0px 20px 0px 0px;
 @media (prefers-reduced-motion: reduce) {
     .hero h1,
     .hero h2,
+    .hero .hero-image,
     .hero .intro,
     .hero .buttons {
         opacity: 1;
