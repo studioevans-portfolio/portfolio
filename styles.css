@@ -44,8 +44,8 @@ p {
 
 .small-intro {
 font-size: 0.7rem;
+		font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 	letter-spacing: 3px;
-	opacity: 0.5 !important;
 }
 
 
@@ -220,6 +220,7 @@ h4 {
 .tags {
 	font-size:14px;
 	margin-top: -10px;
+		font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -320,6 +321,12 @@ nav a:last-child:hover {
     margin-top: auto;
     text-align: center;
 	text-align: center;
+}
+
+.job-copy {
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom:50px;
 }
 
 
