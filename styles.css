@@ -278,6 +278,7 @@ h4 {
 	font-size:14px;
 	margin-top: -10px;
 		font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+		opacity: 50% !important;
 }
 
 nav {
