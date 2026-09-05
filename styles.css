@@ -275,6 +275,12 @@ nav a:last-child:hover {
  padding: 60px 0px 60px 0px;
 }
 
+@media (max-width:768px) {
+.hero{
+ padding: 0px;
+	}}
+
+
 .hero-grid{
     display:grid;
 	  grid-template-columns:1fr 400px;
@@ -282,12 +288,22 @@ nav a:last-child:hover {
     align-items:center;
 }
 
+
+
 #hero-image {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 40px;
+}
+
+
+
+@media (max-width:768px) {
+    #hero-image {
+       display: none;
+    }
 }
 
 .eyebrow{
@@ -367,7 +383,7 @@ a.button:hover {
     a.button {
     display:inline-block;
     background:#0164DF;
-    color:#111111 !important;
+    color:#fff !important;
     padding:12px 30px !important;
     text-decoration:none;
     border-radius:8px;
