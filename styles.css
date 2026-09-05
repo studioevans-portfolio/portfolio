@@ -49,6 +49,11 @@ font-size: 0.7rem;
 	letter-spacing: 3px;
 }
 
+@media (max-width:768px) {
+.small-intro {
+ margin-top: 25px;
+	}}
+
 
 .card img{
     width:100%;
