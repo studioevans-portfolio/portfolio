@@ -9,7 +9,7 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero h2,
+    .hero h1,
     .hero p,
     .hero .buttons {
         animation: none;
@@ -40,6 +40,7 @@ p {
     margin-bottom: 20px;
 	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 	font-size: 18px;
+	font-weight: 100px !important;
 }
 
 .small-intro {
@@ -170,7 +171,7 @@ header {
 
 
 
-h1, h2, h3, h4 {
+h1, h3, h4 {
   font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -211,6 +212,12 @@ header .container{
 h1 a{
     color:#ffffff;
     text-decoration:none;
+}
+
+
+.intro {  	
+font-weight: 100;
+	opacity: 50% !important;
 }
 
 
@@ -302,10 +309,10 @@ nav a:last-child:hover {
 }
 }
 
-.hero h2{
+.hero h1{
     font-size:4rem;
-    line-height:1.1;
-    margin-bottom:20px;
+    line-height:1.2;
+    margin-bottom:30px;
 }
 
 .buttons{
@@ -504,7 +511,7 @@ margin: 0px 30px 0px 0px;
 	
 	
 
-    .hero h2{
+    .hero h1{
         font-size:2.5rem;
     }
 
@@ -702,20 +709,25 @@ margin: 0px 20px 0px 0px;
 
 /* Hero entrance animation */
 
+.hero h1,
 .hero h2,
-.hero p,
+.hero .intro,
 .hero .buttons {
     opacity: 0;
     transform: translateY(25px);
     animation: heroReveal 0.8s ease forwards;
 }
 
-.hero h2 {
+.hero h1 {
     animation-delay: 0.1s;
 }
 
-.hero p {
-    animation-delay: 0.25s;
+.hero h2 {
+    animation-delay: 0.2s;
+}
+
+.hero .intro {
+    animation-delay: 0.3s;
 }
 
 .hero .buttons {
@@ -733,36 +745,12 @@ margin: 0px 20px 0px 0px;
 /* Respect reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
+    .hero h1,
     .hero h2,
-    .hero p,
+    .hero .intro,
     .hero .buttons {
         opacity: 1;
         transform: none;
         animation: none;
-    }
-}
-
-
-
-/* Scroll reveal */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Respect reduced motion */
-
-@media (prefers-reduced-motion: reduce) {
-    .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
     }
 }
