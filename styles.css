@@ -610,12 +610,16 @@ footer{
 
 footer p {
 font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+	font-size: 0.7rem;
     margin: 0;
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; /* Wraps nicely on mobile */
+    flex-wrap: wrap;
+	text-transform: uppercase;
+		letter-spacing: 3px;/* Wraps nicely on mobile */
 }
+
 
 footer a {
     color: #fff;
@@ -628,6 +632,54 @@ footer a:hover {
 }
 
 
+
+/* Contact form */
+
+.contact-form button{
+
+}
+
+.contact-form {
+  max-width: 1100px;
+	letter-spacing: 3px;
+}
+
+.contact-form > div {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+
+}
+
+.contact-form button {
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+	letter-spacing: 3px;
+	
+}
+
+
+/* COOKIE BANNER */
 
 #cookie-banner {
   position: fixed;
