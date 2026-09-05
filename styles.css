@@ -782,3 +782,11 @@ margin: 0px 20px 0px 0px;
         animation: none;
     }
 }
+
+
+
+/* HIDE COOKIE BANNER */
+
+#cookie-banner {
+    display: none !important;
+}
