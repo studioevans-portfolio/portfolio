@@ -84,7 +84,7 @@ font-size: 0.7rem;
 
 @media (max-width:768px) {
 .small-intro {
- margin-top: 25px;
+ margin-top: 20px;
 	}}
 
 
@@ -465,19 +465,12 @@ a.button:hover {
     padding: 60px 0px 40px 0px;
 }
 
-@media(max-width:768px){
-.section {
-    padding: 0px 60px 30px 10px !important;
-	}}
-
 
 .section #about{
     padding: 90px 0px 60px 0px;
 }
 
-.section {
-    padding: 0px 0px 60px 0px;
-}
+
 
  #about {
     padding: 0px 0px 10px 0px;
@@ -501,11 +494,7 @@ a.button:hover {
     margin-bottom:30px;
 }
 
-.portfolio-grid{
-    display:grid;
-	  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
+
 
 .card{
       background:#171717;
@@ -622,10 +611,10 @@ margin: 0px 30px 0px 0px;
     border-radius:15px;
     padding:20px;
     position:relative;
-
     display:flex;
     flex-direction:column;
 }
+
 
 .testimonial-card p{
     line-height:1.7;
