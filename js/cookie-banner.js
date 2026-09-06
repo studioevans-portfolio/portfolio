@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     banner.id = "cookie-banner";
 
     banner.innerHTML = `
-        <button id="closeCookies" aria-label="Close cookie banner">&times;</button>
+ 
 
         <div class="cookie-content">
             <h3>Cookies</h3>
@@ -70,9 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // Close
-    document.getElementById("closeCookies").addEventListener("click", function () {
-        banner.style.display = "none";
-    });
+
 
 });
