@@ -716,45 +716,7 @@ footer a:hover {
 }
 
 
-/* COOKIE BANNER */
 
-#cookie-banner {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  transform: none;
-
-  width: auto;
-  max-width: 420px;
-
-background: rgba(255, 255, 255, 0.9);
-  color: #111111;
-  padding: 18px 20px;
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-
-  z-index: 9999;
-
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-#cookie-banner h3 {
-  color: #111111;
-  margin: 0 0 5px;
-  font-size: 18px;
-}
-
-#cookie-banner p {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.4;
-		text-transform: none;
-	letter-spacing: normal;
-}
 
 #acceptCookies {
   background: #0164DF !important;
@@ -784,22 +746,7 @@ background: rgba(255, 255, 255, 0.9);
 }
 
 
-/* Mobile */
-@media (max-width: 768px) {
-  #cookie-banner {
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    width: auto;
-    max-width: none;
 
-    padding: 16px;
-    gap: 12px;
-  }
-
-  #cookie-banner h3 {
-    font-size: 17px;
-  }
 
  
 

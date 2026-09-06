@@ -696,7 +696,6 @@ margin: 0px 20px 0px 0px;
 
 @media (prefers-reduced-motion: reduce) {
     .hero h1,
-    .hero h2,
     .hero .hero-image,
     .hero .intro,
     .hero .buttons {
