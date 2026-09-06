@@ -717,110 +717,6 @@ footer a:hover {
 
 
 
-/* COOKIE BANNER */
-
-
-#acceptCookies {
-  background: #0164DF !important;
-  color: #fff;
-  border: none;
-  padding: 9px 16px;
-  border-radius: 7px;
-  white-space: nowrap;
-}
-
-#acceptCookies:hover {
-  background: #0164DF;
-}
-
-#rejectCookies {
-  background: #111111;
-  color: #fff;
-  border: none;
-  padding: 9px 16px;
-  border-radius: 7px;
-  white-space: nowrap;
-}
-
-#rejectCookies:hover {
-  background: #0164DF !important;
-  color: #fff;
-}
-
-
-
-  #acceptCookies,
-  #rejectCookies {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-
-
-
-
-#cookie-banner {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: auto;
-    max-width: 420px;
-
-    background: rgba(255, 255, 255, 0.9);
-    color: #111111;
-    padding: 18px 20px;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-
-    z-index: 9999;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-#cookie-banner h3 {
-    color: #111111;
-    margin: 0 0 5px;
-    font-size: 18px;
-}
-
-#cookie-banner p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.4;
-    text-transform: none;
-    letter-spacing: normal;
-}
-
-#cookie-banner a {
-    color: #111111;
-}
-
-#closeCookies {
-    cursor: pointer;
-}
-
-/* COOKIES MOBILE */
-
-@media (max-width: 768px) {
-    #cookie-banner {
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        width: auto;
-        max-width: none;
-        padding: 16px;
-        gap: 12px;
-    }
-
-    #cookie-banner h3 {
-        font-size: 17px;
-    }
-}
-
-
 	
 	.icons {
 width: 40px;
@@ -828,7 +724,6 @@ margin: 0px 20px 0px 0px;
 }
 	
 	
-}
 
 
 /* Hero entrance animation */
