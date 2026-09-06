@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         localStorage.setItem("cookieConsent", "accepted");
-
         banner.style.display = "none";
     });
 
@@ -67,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         localStorage.setItem("cookieConsent", "rejected");
-
         banner.style.display = "none";
     });
 
