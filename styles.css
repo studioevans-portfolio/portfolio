@@ -233,9 +233,6 @@ nav a:last-child:hover {
    PORTFOLIO
 ======================================== */
 
-/* ========================================
-   PORTFOLIO
-======================================== */
 
 .portfolio-grid {
     display: grid;
@@ -287,6 +284,90 @@ nav a:last-child:hover {
     line-height: 25px;
 }
 
+
+
+
+/* ========================================
+   GOOGLE REVIEWS
+======================================== */
+
+
+.google-reviews {
+    border-top: 1px solid var(--border-color);
+	margin-bottom: 50px;
+}
+
+.google-reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.google-stars,
+.review-stars {
+    letter-spacing: 0.08em;
+}
+
+.google-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.google-review {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.review-stars {
+    margin-bottom: 1.25rem;
+	color:#f2b603;
+}
+
+.google-review p {
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+}
+
+.review-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.google-reviews-link {
+    display: inline-block;
+    margin-top: 3rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .google-reviews-header {
+        display: block;
+    }
+
+    .google-rating {
+        margin-top: 1rem;
+    }
+
+    .google-reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* ========================================
    BUTTONS
