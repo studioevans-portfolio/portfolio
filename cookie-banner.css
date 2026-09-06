@@ -1,26 +1,37 @@
-/* COOKIE BANNER */
+/* ========================================
+   COOKIE BANNER
+======================================== */
 
 #cookie-banner {
     position: fixed;
     bottom: 20px;
     left: 20px;
+
     width: auto;
     max-width: 420px;
-
-    background: rgba(255, 255, 255, 0.9);
-    color: #111111;
-    padding: 18px 20px;
-    border-radius: 10px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: 15px;
+
+    padding: 18px 20px;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #111111;
+
+    border-radius: 10px;
 
     z-index: 9999;
 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
+
+
+/* ========================================
+   COOKIE BANNER TEXT
+======================================== */
 
 #cookie-banner h3 {
     color: #111111;
@@ -40,12 +51,20 @@
     color: #111111;
 }
 
+
+/* ========================================
+   COOKIE BUTTONS
+======================================== */
+
 #acceptCookies {
     background: #0164DF !important;
     color: #fff;
     border: none;
+
     padding: 9px 16px;
+
     border-radius: 7px;
+
     white-space: nowrap;
     cursor: pointer;
 }
@@ -54,8 +73,11 @@
     background: #111111;
     color: #fff;
     border: none;
+
     padding: 9px 16px;
+
     border-radius: 7px;
+
     white-space: nowrap;
     cursor: pointer;
 }
@@ -65,8 +87,10 @@
 }
 
 
-
-/* MOBILE */
+/* ========================================
+   MOBILE
+   768px and below
+======================================== */
 
 @media (max-width: 768px) {
 
@@ -74,9 +98,12 @@
         left: 15px;
         right: 15px;
         bottom: 15px;
+
         width: auto;
         max-width: none;
+
         padding: 16px;
+
         gap: 12px;
     }
 
