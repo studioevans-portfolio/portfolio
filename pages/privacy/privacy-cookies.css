@@ -489,10 +489,10 @@ footer a:hover {
         padding: 0;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr 400px;
-        gap: 20px;
-    }
+   .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
     .eyebrow {
         margin-top: -45px;
