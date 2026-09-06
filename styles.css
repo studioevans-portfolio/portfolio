@@ -752,6 +752,8 @@ background: rgba(255, 255, 255, 0.9);
   margin: 0;
   font-size: 13px;
   line-height: 1.4;
+		text-transform: none;
+	letter-spacing: normal;
 }
 
 #acceptCookies {
@@ -799,9 +801,7 @@ background: rgba(255, 255, 255, 0.9);
     font-size: 17px;
   }
 
-  #cookie-banner p {
-    font-size: 12px;
-  }
+ 
 
   #acceptCookies,
   #rejectCookies {
@@ -872,10 +872,3 @@ margin: 0px 20px 0px 0px;
     }
 }
 
-
-
-/* HIDE COOKIE BANNER */
-
-#cookie-banner {
-    display: none !important;
-}
