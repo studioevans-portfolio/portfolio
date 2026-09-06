@@ -233,6 +233,24 @@ nav a:last-child:hover {
    PORTFOLIO
 ======================================== */
 
+/* ========================================
+   PORTFOLIO
+======================================== */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.card {
+    background: #171717;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
 .card img {
     width: 100%;
@@ -597,6 +615,7 @@ footer a:hover {
 	.container {
 		   grid-template-columns: 1fr;
 	}
+}
 
 /* ========================================
    MOBILE
@@ -687,7 +706,9 @@ footer a:hover {
 	.card {
 	margin-bottom: 30px;
 }
-	
+	.portfolio-grid {
+    grid-template-columns: 1fr;
+}
 }
 
 
