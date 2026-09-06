@@ -169,7 +169,7 @@
 
         <!-- PORTFOLIO -->
 
-        <section id="portfolio" class="section">
+      <section id="portfolio" class="section reveal">
 
             <div class="container">
 
@@ -764,89 +764,94 @@
 
     <!-- MOBILE MENU SCRIPT -->
 
-    <script>
+<script>
 
-        const menuBtn = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('#mobileNav');
+    const menuBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#mobileNav');
 
-        menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', () => {
 
-            const isOpen = nav.classList.toggle('active');
+        const isOpen = nav.classList.toggle('active');
 
-            menuBtn.setAttribute('aria-expanded', isOpen);
+        menuBtn.setAttribute('aria-expanded', isOpen);
+
+        menuBtn.setAttribute(
+            'aria-label',
+            isOpen ? 'Close menu' : 'Open menu'
+        );
+
+        menuBtn.textContent = isOpen ? '×' : '☰';
+
+    });
+
+
+    document.addEventListener('keydown', (event) => {
+
+        if (
+            event.key === 'Escape' &&
+            nav.classList.contains('active')
+        ) {
+
+            nav.classList.remove('active');
+
+            menuBtn.setAttribute(
+                'aria-expanded',
+                'false'
+            );
 
             menuBtn.setAttribute(
                 'aria-label',
-                isOpen ? 'Close menu' : 'Open menu'
+                'Open menu'
             );
 
-        });
+            menuBtn.textContent = '☰';
+
+            menuBtn.focus();
+
+        }
+
+    });
+
+</script>
 
 
-        document.addEventListener('keydown', (event) => {
+   <!-- REVEAL SCRIPT -->
 
-            if (
-                event.key === 'Escape' &&
-                nav.classList.contains('active')
-            ) {
+<script>
 
-                nav.classList.remove('active');
+    const revealElements = document.querySelectorAll('.reveal');
 
-                menuBtn.setAttribute(
-                    'aria-expanded',
-                    'false'
-                );
+    const revealObserver = new IntersectionObserver(
+        (entries) => {
 
-                menuBtn.setAttribute(
-                    'aria-label',
-                    'Open menu'
-                );
+            entries.forEach(entry => {
 
-                menuBtn.focus();
+                if (entry.isIntersecting) {
 
-            }
+                    entry.target.classList.add('visible');
 
-        });
+                } else {
 
-    </script>
+                    entry.target.classList.remove('visible');
 
+                }
 
-    <!-- REVEAL SCRIPT -->
+            });
 
-    <script>
-
-        const revealElements = document.querySelectorAll('.reveal');
-
-        const revealObserver = new IntersectionObserver(
-            (entries) => {
-
-                entries.forEach(entry => {
-
-                    if (entry.isIntersecting) {
-
-                        entry.target.classList.add('visible');
-
-                        revealObserver.unobserve(entry.target);
-
-                    }
-
-                });
-
-            },
-            {
-                threshold: 0.15
-            }
-        );
+        },
+        {
+            threshold: 0.15
+        }
+    );
 
 
-        revealElements.forEach(element => {
+    revealElements.forEach(element => {
 
-            revealObserver.observe(element);
+        revealObserver.observe(element);
 
-        });
+    });
 
-    </script>
-
+</script>
 
     <!-- COOKIE BANNER -->
 

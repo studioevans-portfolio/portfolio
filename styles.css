@@ -186,6 +186,8 @@ nav a:last-child:hover {
 }
 
 
+
+
 /* ========================================
    HERO
 ======================================== */
@@ -534,35 +536,36 @@ footer a:hover {
    HERO ENTRANCE ANIMATION
 ======================================== */
 
+.hero .small-intro,
 .hero h1,
 .hero h2,
 .hero .hero-image,
-.hero .intro,
 .hero .buttons {
     opacity: 0;
     transform: translateY(25px);
     animation: heroReveal 0.8s ease forwards;
 }
 
-.hero h1 {
+.hero .small-intro {
     animation-delay: 0.1s;
 }
 
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
 .hero h2 {
-    animation-delay: 0.2s;
-}
-
-.hero .hero-image {
-    animation-delay: 0.2s;
-}
-
-.hero .intro {
     animation-delay: 0.3s;
 }
 
-.hero .buttons {
+.hero .hero-image {
     animation-delay: 0.4s;
 }
+
+.hero .buttons {
+    animation-delay: 0.5s;
+}
+
 
 @keyframes heroReveal {
     to {
@@ -572,7 +575,22 @@ footer a:hover {
 }
 
 
+/* ========================================
+   SCROLL REVEAL
+======================================== */
 
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* ========================================
    TABLET - 820x1180
