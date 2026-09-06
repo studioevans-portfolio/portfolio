@@ -233,18 +233,17 @@ nav a:last-child:hover {
    PORTFOLIO
 ======================================== */
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.portfolio-grid .card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
 }
 
-.card {
-    background: #171717;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+.reveal.visible .card {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card img {
