@@ -605,41 +605,41 @@
 
     <script>
 
-        const revealElements =
-            document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll(
+        '.hero h1, .hero p, .hero h2, .hero h3, .hero li'
+    );
 
-        const revealObserver =
-            new IntersectionObserver(
-                (entries) => {
+    const revealObserver = new IntersectionObserver(
+        (entries) => {
 
-                    entries.forEach(entry => {
+            entries.forEach(entry => {
 
-                        if (entry.isIntersecting) {
+                if (entry.isIntersecting) {
 
-                            entry.target.classList.add('visible');
+                    entry.target.classList.add('visible');
 
-                            revealObserver.unobserve(
-                                entry.target
-                            );
+                } else {
 
-                        }
+                    entry.target.classList.remove('visible');
 
-                    });
-
-                },
-                {
-                    threshold: 0.15
                 }
-            );
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
 
 
-        revealElements.forEach(element => {
+    revealElements.forEach(element => {
 
-            revealObserver.observe(element);
+        revealObserver.observe(element);
 
-        });
+    });
 
-    </script>
+</script>
 
 
     <!-- COOKIE BANNER -->

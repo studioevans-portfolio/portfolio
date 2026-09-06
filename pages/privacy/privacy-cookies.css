@@ -393,11 +393,29 @@ footer a:hover {
    HERO ENTRANCE ANIMATION
 ======================================== */
 
-.hero h1 {
+/* ========================================
+   PRIVACY PAGE SCROLL REVEAL
+======================================== */
+
+.hero h1,
+.hero p,
+.hero h2,
+.hero h3,
+.hero li {
     opacity: 0;
     transform: translateY(25px);
-    animation: heroReveal 0.8s ease forwards;
-    animation-delay: 0.1s;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.hero h1.visible,
+.hero p.visible,
+.hero h2.visible,
+.hero h3.visible,
+.hero li.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes heroReveal {
