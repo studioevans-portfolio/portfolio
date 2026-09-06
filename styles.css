@@ -41,7 +41,7 @@ p {
 .intro {
     margin-bottom: 20px;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100 !important;
     opacity: 50% !important;
 }
@@ -99,7 +99,7 @@ nav a:hover,
 }
 
 .section {
-    padding: 60px 0 40px 0;
+    padding: 20px 0 40 0;
 }
 
 .section h3 {
@@ -110,6 +110,8 @@ nav a:hover,
 .job {
     margin-bottom: 30px;
 }
+
+
 
 
 /* ========================================
@@ -449,7 +451,7 @@ a.button:hover {
 ======================================== */
 
 footer {
-    padding: 60px 0;
+    padding: 40px 0;
     border-top: 1px solid #222;
 }
 
@@ -463,6 +465,7 @@ footer p {
     flex-wrap: wrap;
     text-transform: uppercase;
     letter-spacing: 3px;
+	line-height: normal;
 }
 
 footer a {
@@ -602,11 +605,8 @@ footer a:hover {
     .small-intro {
         margin-top: 20px;
     }
+	
 
-    .divider {
-        margin-top: 25px;
-        margin-bottom: 40px;
-    }
 
     .menu-toggle {
         display: block;
@@ -666,10 +666,11 @@ footer a:hover {
 
     .intro {
         font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 100 !important;
         line-height: 1.6;
     }
+	
 
     .hero h1 {
         font-size: 2.5rem;
@@ -678,6 +679,11 @@ footer a:hover {
     #testimonials p {
         margin-bottom: 40px;
     }
+	
+	.card {
+	margin-bottom: 30px;
+}
+	
 }
 
 
