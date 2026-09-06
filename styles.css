@@ -273,14 +273,13 @@ nav a:last-child:hover {
 }
 
 .card-buttons {
-    margin: 20px 20px 30px;
+    margin: auto 20px 30px;
     text-align: center;
 }
 
 .job-copy {
     font-size: 15px;
     line-height: 25px;
-    margin-bottom: 50px;
 }
 
 
