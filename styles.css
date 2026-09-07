@@ -334,6 +334,7 @@ nav a:last-child:hover {
 
 .google-reviews {
     position: relative;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     overflow: hidden;
     border-top: 1px solid var(--border-color);
     margin-bottom: 50px;
@@ -352,6 +353,7 @@ nav a:last-child:hover {
 
 .section-label {
     font-size: 0.8rem;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.12em;
 	color: white;
@@ -394,11 +396,12 @@ nav a:last-child:hover {
 
 .review-author {
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .google-reviews-link {
     display: inline-block;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     margin-top: 3rem;
     text-decoration: none;
 }
