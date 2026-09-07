@@ -183,6 +183,11 @@ h4 {
     font-size: 19px;
 }
 
+
+h5 {
+font-size: 32px;	
+}
+
 a,
 a:visited {
     text-decoration: none;
@@ -619,18 +624,38 @@ nav a:last-child {
     letter-spacing: -3px;
 }
 
-.contact-marker {
-    display: block;
-    width: 24px;
-    height: 24px;
+.contact-markers {
+    display: flex;
+    gap: 8px;
     margin-bottom: 2rem;
+}
+
+.contact-marker-blue,
+.contact-marker-yellow,
+.contact-marker-red {
+    width: 20px;
+    height: 20px;
+	margin:5px;
+}
+
+.contact-marker-blue {
+    background: #0165e8;
+}
+
+.contact-marker-yellow {
     background: #ffd600;
+}
+
+.contact-marker-red {
+    background: #f13746;
 }
 
 .contact-intro p {
     max-width: 500px;
     margin-bottom: 4rem;
 }
+
+
 
 
 /* ----------------------------------------
