@@ -290,11 +290,20 @@ nav a:last-child:hover {
 /* ========================================
    GOOGLE REVIEWS
 ======================================== */
-
+.review-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 20px 20px 20px 20px;
+	font-size: 14px;
+	display: grid;
+	height: 100%;
+}
 
 .google-reviews {
     border-top: 1px solid var(--border-color);
 	margin-bottom: 50px;
+	color: black;
 }
 
 .google-reviews-header {
@@ -309,6 +318,7 @@ nav a:last-child:hover {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
+	color: white;
 }
 
 .google-rating {
@@ -316,17 +326,19 @@ nav a:last-child:hover {
     align-items: center;
     gap: 0.6rem;
     font-size: 0.9rem;
+	color: white;
 }
 
 .google-stars,
 .review-stars {
     letter-spacing: 0.08em;
+	color: #f2b603;
 }
 
 .google-reviews-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .google-review {
