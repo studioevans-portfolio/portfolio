@@ -576,6 +576,32 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #fff;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    fill: currentColor;
+}
 
 /* ========================================
    BACK TO TOP
@@ -821,3 +847,5 @@ footer a:hover {
         animation: none;
     }
 }
+
+
