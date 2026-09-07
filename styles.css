@@ -352,10 +352,8 @@ nav a:last-child:hover {
 }
 
 .section-label {
-    font-size: 0.8rem;
 	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+
 	color: white;
 }
 
