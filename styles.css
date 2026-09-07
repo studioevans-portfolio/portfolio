@@ -428,8 +428,7 @@ a.button {
     display:inherit;
     background: #0164DF;
     color: #fff !important;
-margin-top: 20px;
-    padding: 7px;
+    padding: 10px 30px;
     text-decoration: none;
     border-radius: 8px;
     font-size: 0.8rem;
