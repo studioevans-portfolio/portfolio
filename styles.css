@@ -291,20 +291,56 @@ nav a:last-child:hover {
    GOOGLE REVIEWS
 ======================================== */
 .review-card {
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 14px;
-    padding: 20px 20px 20px 20px;
-	font-size: 14px;
-	display: grid;
-	height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 22px;
+
+    padding: 20px;
+    font-size: 14px;
+    display: grid;
+    height: 100%;
+
+    color: white;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.review-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.28),
+            transparent 25%,
+            transparent 70%,
+            rgba(255, 255, 255, 0.08)
+        );
+
+    opacity: 0.6;
 }
 
 .google-reviews {
+    position: relative;
+    overflow: hidden;
     border-top: 1px solid var(--border-color);
-	margin-bottom: 50px;
-	color: black;
+    margin-bottom: 50px;
+    color: white;
 }
+
+
 
 .google-reviews-header {
     display: flex;
