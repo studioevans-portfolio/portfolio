@@ -19,6 +19,117 @@ html {
 }
 
 
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+.button-nav {
+    background: #0164DF;
+    color: #fff !important;
+    padding: 10px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.button-nav:hover {
+transform: translateY(-3px);
+	 transition: transform 0.5s ease, background 0.5s ease;
+	background: white;
+	color: black !important;
+}
+
+.button-primary {
+    display: inline-block;
+    background: #0164DF;
+    color: #fff !important;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+
+}
+
+
+.button-primary:hover {
+background: #fff;
+color: #000 !important;
+ transform: translateY(-3px);
+	 transition: transform 0.5s ease, background 0.5s ease;
+
+}
+
+.button-secondary {
+     display: inline-block;
+    background: #0164DF;
+    color: #fff !important;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+ 
+}
+
+
+
+.card-button {
+    display: block;
+    width: auto;
+	margin: 23px;
+    padding: 10px !important;
+    background: #0164DF;
+    color: #fff !important;
+
+    border: 0;
+    border-radius: 8px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 0.8rem;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+}
+
+.card-button:hover {
+	color: #000 !important;
+	background: #fff;
+ transform: translateY(-3px);
+	 transition: transform 0.5s ease, background 0.5s ease;
+}
+
+
+.contact-form button {
+  color: #fff !important;
+	background: #0164DF;
+	padding: 0.8rem 1.5rem;
+    border: 0;
+    border-radius: 12px;
+    font: inherit;
+	font-size: 0.8rem;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+
+
+.contact-form button:hover {
+	color: #000 !important;
+	background: #fff;
+	 transform: translateY(-2px);
+	 transition: transform 0.5s ease, background 0.5s ease;
+}
 /* ========================================
    GENERAL
 ======================================== */
@@ -74,19 +185,11 @@ h4 {
 
 a,
 a:visited {
-    color: #FFF;
     text-decoration: none;
-    transition: color 0.3s ease;
+	color: inherit;
 }
 
-a:hover,
-a:focus,
-h1 a:hover,
-nav a:hover,
-.card a:hover,
-#contact a:hover {
-    color: #0164df;
-}
+
 
 
 /* ========================================
@@ -107,8 +210,8 @@ nav a:hover,
     margin-bottom: 40px;
 }
 
-.job {
-    margin-bottom: 30px;
+.job-copy {
+    margin-bottom: 40px;
 }
 
 
@@ -162,27 +265,20 @@ nav a:last-child {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
-nav a:last-child:hover {
-    background: #fff;
-    color: #111 !important;
-}
-
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
     width: 48px;
     height: 48px;
-    padding: 8px;
-}
+    padding: 0;
+    background: transparent;
+    border: 0;
 
-.menu-toggle:focus-visible {
-    outline: 3px solid #0164DF;
-    outline-offset: 4px;
-    border-radius: 4px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+
+    cursor: pointer;
 }
 
 
@@ -222,11 +318,7 @@ nav a:last-child:hover {
     margin-bottom: 30px;
 }
 
-.buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-}
+
 
 
 /* ========================================
@@ -274,10 +366,6 @@ nav a:last-child:hover {
     margin-top: auto;
 }
 
-.card-buttons {
-    margin: auto 20px 30px;
-    text-align: center;
-}
 
 .job-copy {
     font-size: 15px;
@@ -418,29 +506,6 @@ nav a:last-child:hover {
     }
 }
 
-/* ========================================
-   BUTTONS
-======================================== */
-
-a.button {
-    display:inherit;
-    background: #0164DF;
-    color: #fff !important;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    letter-spacing: 3px;
-    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-
-a.button:hover {
-    background: #fff;
-    color: #111 !important;
-    transform: scale(1.05);
-}
 
 
 /* ========================================
@@ -524,7 +589,6 @@ a.button:hover {
     font-size: 0.95rem;
 }
 
-
 /* ========================================
    CONTACT
 ======================================== */
@@ -535,54 +599,182 @@ a.button:hover {
     text-decoration: none;
 }
 
-.contact-form {
-    max-width: 1100px;
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+
+/* ----------------------------------------
+   INTRO
+---------------------------------------- */
+
+.contact-intro h3 {
+    max-width: 550px;
+    margin: 0 0 2rem;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -3px;
+}
+
+.contact-marker {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2rem;
+    background: #ffd600;
+}
+
+.contact-intro p {
+    max-width: 500px;
+    margin-bottom: 4rem;
+}
+
+
+/* ----------------------------------------
+   CONTACT DETAILS
+---------------------------------------- */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-details span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
     letter-spacing: 3px;
 }
 
-.contact-form > div {
+.contact-details p {
+    margin: 0;
+}
+
+
+/* ----------------------------------------
+   FORM
+---------------------------------------- */
+
+.contact-form {
+    width: 100%;
+    max-width: 900px;
+    letter-spacing: 3px;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.contact-field {
     margin-bottom: 1.5rem;
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 0.5rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    font: inherit;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    padding: 0.8rem 1.5rem;
-    border: 0;
-    border-radius: 4px;
-    font: inherit;
-    cursor: pointer;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
     letter-spacing: 3px;
 }
 
 
-/* ========================================
-   ICONS
-======================================== */
+/* ----------------------------------------
+   GLASS FIELDS
+---------------------------------------- */
 
-.icons {
-    width: 40px;
-    margin: 0 20px 0 0;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.2rem 1.3rem;
+
+    font: inherit;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.12),
+        0 8px 30px rgba(0, 0, 0, 0.15);
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-form input {
+    height: 70px;
+}
+
+.contact-form textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 
+/* ----------------------------------------
+   FOCUS
+---------------------------------------- */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.75);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.15),
+        0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+
+
+/* ----------------------------------------
+   MOBILE
+---------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .contact-intro h3 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-submit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
 /* ========================================
    FOOTER
 ======================================== */
@@ -611,7 +803,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    transform: scale(1.06);
 }
 
 .social-links {
@@ -628,19 +820,20 @@ footer a:hover {
     text-decoration: none;
 }
 
-.social-links a:hover {
-    color: #fff;
-    opacity: 0.6;
-    text-decoration: none;
-}
-
 .social-links svg {
     width: 30px;
     height: 30px;
     display: block;
-    fill: currentColor;
+    fill: #fff;
 }
 
+
+.social-links svg:hover {
+    width: 30px;
+    height: 30px;
+    display: block;
+   transform: scale(1.06);
+}
 /* ========================================
    BACK TO TOP
 ======================================== */
@@ -701,7 +894,7 @@ footer a:hover {
 .hero h1,
 .hero h2,
 .hero .hero-image,
-.hero .buttons {
+.hero {
     opacity: 0;
     transform: translateY(25px);
     animation: heroReveal 0.8s ease forwards;
@@ -723,7 +916,7 @@ footer a:hover {
     animation-delay: 0.4s;
 }
 
-.hero .buttons {
+.hero {
     animation-delay: 0.5s;
 }
 
@@ -788,8 +981,12 @@ footer a:hover {
 	
 
 
+  @media (max-width: 768px) {
+
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     header .container {
@@ -804,14 +1001,20 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
         position: absolute;
-        top: 100%;
+        top: calc(100% + 10px);
         right: 0;
+
         width: 200px;
-        background: #171717;
         padding: 20px;
+
+        background: #171717;
+        border: 1px solid #333;
         border-radius: 12px;
+
         gap: 15px;
+
         z-index: 1001;
     }
 
@@ -819,11 +1022,7 @@ footer a:hover {
         text-align: left;
     }
 
-    nav a:focus-visible {
-        outline: 2px solid #0164DF;
-        outline-offset: 3px;
-        border-radius: 4px;
-    }
+}
 
     .hero {
         padding: 0;
@@ -879,7 +1078,7 @@ footer a:hover {
     .hero h2,
     .hero .hero-image,
     .hero .intro,
-    .hero .buttons {
+    .hero {
         opacity: 1;
         transform: none;
         animation: none;
