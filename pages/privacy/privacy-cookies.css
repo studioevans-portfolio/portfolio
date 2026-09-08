@@ -1,3 +1,7 @@
+/* ========================================
+   RESET
+======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +10,36 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+
+
+
+
+/* ========================================
+   SQUARES
+======================================== */
+
+
+
+.square {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 7px;
+    vertical-align: middle;
+}
+
+.square.blue {
+    background: #0165e8;
+}
+
+.square.yellow {
+    background: #f0b51c;
+}
+
+.square.red {
+    background: #f13746;
 }
 
 
@@ -25,25 +59,10 @@ body {
 
 p {
     margin-bottom: 20px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-}
-
-.intro {
-    margin-bottom: 20px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 100 !important;
-    opacity: 50% !important;
-}
-
-.small-intro {
-    font-size: 0.7rem;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    letter-spacing: 3px;
-    line-height: 1.8;
 }
 
 h1,
+h2,
 h3,
 h4 {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
@@ -53,33 +72,53 @@ h4 {
     color: white;
 }
 
-h1 a {
-    color: #ffffff;
-    text-decoration: none;
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
 }
 
-h4 {
-    font-size: 19px;
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 60px;
+    margin-bottom: 25px;
 }
 
-
-/* ========================================
-   LINKS
-======================================== */
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
 a,
 a:visited {
-    color: #FFF;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover,
-a:focus,
-h1 a:hover,
-nav a:hover,
-#contact a:hover {
+a:focus {
     color: #0164df;
+}
+
+h1 {
+	margin-top: 50px;
+}
+/* ========================================
+   SELECTION
+======================================== */
+
+::selection {
+    background: #0164DF;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: #0164DF;
+    color: #ffffff;
 }
 
 
@@ -92,15 +131,6 @@ nav a:hover,
     margin: auto;
 }
 
-.section {
-    padding: 60px 0 40px 0;
-}
-
-.section h3 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
 
 /* ========================================
    HEADER / NAVIGATION
@@ -110,10 +140,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 30px 0;
+
+    padding: 20px 0;
+
     background: rgba(17, 17, 17, 0.82);
+
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -131,9 +165,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 50px;
+
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
     font-size: 0.7rem;
+
     transition: transform 0.2s ease;
 }
 
@@ -145,9 +181,10 @@ nav a:hover {
 nav a:last-child {
     background: #0164DF;
     color: #fff !important;
-    padding: 10px 20px;
+
+    padding: 5px 20px;
+
     border-radius: 8px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
 }
 
 nav a:last-child:hover {
@@ -155,133 +192,139 @@ nav a:last-child:hover {
     color: #111 !important;
 }
 
+
+/* ========================================
+   MOBILE MENU
+======================================== */
+
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+
     width: 48px;
     height: 48px;
-    padding: 8px;
-}
+    padding: 0;
 
-.menu-toggle:focus-visible {
-    outline: 3px solid #0164DF;
-    outline-offset: 4px;
-    border-radius: 4px;
-}
+    background: transparent;
+    border: 0;
 
+    color: #ffffff;
 
-/* ========================================
-   SKIP LINK
-======================================== */
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1;
 
-.skip-link {
-    position: absolute;
-    left: 10px;
-    top: -100px;
-    background: #fff;
-    color: #111111;
-    padding: 12px 18px;
-    z-index: 10000;
-}
-
-.skip-link:focus {
-    top: 10px;
+    cursor: pointer;
 }
 
 
 /* ========================================
-   HERO
+   PRIVACY PAGE
 ======================================== */
 
-.hero {
-    padding: 60px 0;
+.privacy {
+    padding: 100px 0 100px;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 0px;
-    gap: 60px;
-    align-items: center;
+.privacy-header {
+    max-width: 850px;
+    margin-bottom: 70px;
 }
 
-.eyebrow {
-    color: #999;
+.privacy-header .small-intro {
     margin-bottom: 20px;
 }
 
-.hero h1 {
+.privacy-header h1 {
     font-size: 4rem;
-    line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
+.privacy-intro {
+    max-width: 750px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
 /* ========================================
-   BUTTONS
+   PRIVACY CONTENT
 ======================================== */
 
-a.button {
-    display: inline-block;
-    background: #0164DF;
-    color: #fff !important;
-    padding: 12px 50px !important;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+.privacy-content {
+    max-width: 850px;
+}
+
+.privacy-content section {
+    padding: 40px 0;
+    border-top: 1px solid #222;
+}
+
+.privacy-content section:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.privacy-content h2 {
+    margin-top: 0;
+}
+
+.privacy-content h3 {
+    margin-top: 35px;
+}
+
+.privacy-content p {
+    max-width: 800px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.privacy-content ul,
+.privacy-content ol {
+    margin: 0 0 25px 25px;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.privacy-content li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.privacy-content strong {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.privacy-content a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 4px;
+}
+
+.privacy-content a:hover {
+    color: #0164DF;
+    text-decoration-color: #0164DF;
+}
+
+
+/* ========================================
+   PRIVACY META
+======================================== */
+
+.privacy-meta {
+    font-size: 0.7rem;
+
     letter-spacing: 3px;
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        color 0.2s ease;
-}
+    text-transform: uppercase;
 
-a.button:hover {
-    background: #fff;
-    color: #111 !important;
-    transform: scale(1.05);
-}
-
-
-/* ========================================
-   TAGS / SQUARES
-======================================== */
-
-.tags {
-    font-size: 14px;
-    margin-top: -10px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    opacity: 50% !important;
-}
-
-.square {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    margin: 0 7px;
-    vertical-align: middle;
-}
-
-.square.blue {
-    background: #0165e8;
-}
-
-.square.yellow {
-    background: #f2b603;
-}
-
-.square.red {
-    background: #f13746;
+    color: rgba(255, 255, 255, 0.45);
 }
 
 
@@ -292,30 +335,11 @@ a.button:hover {
 .divider {
     width: 100%;
     height: 1px;
+
     background: #222;
-    margin-top: 30px;
+
+    margin-top: 60px;
     margin-bottom: 60px;
-}
-
-
-/* ========================================
-   CONTACT
-======================================== */
-
-#contact a,
-#contact a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-/* ========================================
-   ICONS
-======================================== */
-
-.icons {
-    width: 40px;
-    margin: 0 20px 0 0;
 }
 
 
@@ -324,18 +348,23 @@ a.button:hover {
 ======================================== */
 
 footer {
-    padding: 60px 0;
+    padding: 40px 0;
     border-top: 1px solid #222;
 }
 
 footer p {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+
     font-size: 0.7rem;
+    line-height: normal;
+
     margin: 0;
+
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -346,7 +375,41 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    transform: scale(1.06);
+}
+
+
+/* ========================================
+   SOCIAL LINKS
+======================================== */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    fill: #fff;
+
+    transition: transform 0.2s ease;
+}
+
+.social-links svg:hover {
+    transform: scale(1.06);
 }
 
 
@@ -356,6 +419,7 @@ footer a:hover {
 
 .back-to-top {
     position: fixed;
+
     right: 24px;
     bottom: 24px;
 
@@ -373,10 +437,12 @@ footer a:hover {
     color: #fff;
 
     text-decoration: none;
+
     font-size: 2rem;
     line-height: 1;
 
     transition: all 0.2s ease;
+
     z-index: 1000;
 }
 
@@ -384,41 +450,69 @@ footer a:hover {
 .back-to-top:focus {
     color: #fff !important;
     transform: translateY(-3px);
+
     border-color: #666;
+
     text-decoration: none !important;
 }
 
 
 /* ========================================
-   HERO ENTRANCE ANIMATION
+   SKIP LINK
 ======================================== */
+
+.skip-link {
+    position: absolute;
+
+    left: 10px;
+    top: -100px;
+
+    background: #fff;
+    color: #111111;
+
+    padding: 12px 18px;
+
+    z-index: 10000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
 
 /* ========================================
-   PRIVACY PAGE SCROLL REVEAL
+   ENTRANCE ANIMATION
 ======================================== */
 
-.hero h1,
-.hero p,
-.hero h2,
-.hero h3,
-.hero li {
+.privacy-header,
+.privacy-content section {
     opacity: 0;
     transform: translateY(25px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+
+    animation: privacyReveal 0.8s ease forwards;
 }
 
-.hero h1.visible,
-.hero p.visible,
-.hero h2.visible,
-.hero h3.visible,
-.hero li.visible {
-    opacity: 1;
-    transform: translateY(0);
+.privacy-header {
+    animation-delay: 0.1s;
 }
 
-@keyframes heroReveal {
+.privacy-content section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.privacy-content section:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.privacy-content section:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.privacy-content section:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+@keyframes privacyReveal {
     to {
         opacity: 1;
         transform: translateY(0);
@@ -428,32 +522,14 @@ footer a:hover {
 
 /* ========================================
    MOBILE
-   768px and below
 ======================================== */
 
 @media (max-width: 768px) {
 
-    .intro {
-        font-size: 14px;
-        font-weight: 100 !important;
-        line-height: 1.6;
-    }
-
-    .small-intro {
-        margin-top: 20px;
-    }
-
-    .divider {
-        margin-top: 25px;
-        margin-bottom: 40px;
-    }
-
     .menu-toggle {
-        display: block;
-    }
-
-    header .container {
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     nav {
@@ -462,16 +538,26 @@ footer a:hover {
 
     nav.active {
         display: flex;
+
         flex-direction: column;
         align-items: flex-start;
+
         position: absolute;
-        top: 100%;
+
+        top: calc(100% + 10px);
         right: 0;
+
         width: 200px;
-        background: #171717;
+
         padding: 20px;
+
+        background: #171717;
+
+        border: 1px solid #333;
         border-radius: 12px;
+
         gap: 15px;
+
         z-index: 1001;
     }
 
@@ -479,49 +565,50 @@ footer a:hover {
         text-align: left;
     }
 
-    nav a:focus-visible {
-        outline: 2px solid #0164DF;
-        outline-offset: 3px;
-        border-radius: 4px;
+    .privacy {
+        padding: 60px 0 70px;
     }
 
-    .hero {
-        padding: 0;
+    .privacy-header {
+        margin-bottom: 50px;
     }
 
-   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-    .eyebrow {
-        margin-top: -45px;
-        margin-bottom: 20px;
-    }
-
-    #hero-image {
-        max-width: 280px;
-    }
-
-    .hero h1 {
+    .privacy-header h1 {
         font-size: 2.5rem;
+        line-height: 1.2;
     }
 
-    #testimonials p {
-        margin-bottom: 40px;
+    .privacy-intro {
+        font-size: 16px;
+        line-height: 1.6;
     }
-}
 
+    .privacy-content section {
+        padding: 35px 0;
+    }
 
-/* ========================================
-   SMALL MOBILE
-   412px and below
-======================================== */
+    .privacy-content h2 {
+        font-size: 1.7rem;
+    }
 
-@media (max-width: 412px) {
+    .privacy-content h3 {
+        font-size: 1.2rem;
+    }
 
-    a.button {
-        padding: 12px 30px !important;
+    .privacy-content p,
+    .privacy-content li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .back-to-top {
+        width: 54px;
+        height: 54px;
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 1.7rem;
     }
 }
 
@@ -532,9 +619,8 @@ footer a:hover {
 
 @media (prefers-reduced-motion: reduce) {
 
-    .hero h1,
-    .hero p,
-    .hero .buttons {
+    .privacy-header,
+    .privacy-content section {
         opacity: 1;
         transform: none;
         animation: none;
