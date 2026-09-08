@@ -259,8 +259,8 @@ nav {
 
 nav a:hover {
     text-decoration: none;
-    transform: scale(1.06);
-}
+transform: translateY(-3px);
+	transition: transform 0.5s ease, background 0.5s ease; }
 
 nav a:last-child {
     background: #0164DF;
@@ -496,6 +496,15 @@ nav a:last-child {
     margin-top: 3rem;
     text-decoration: none;
 }
+
+
+.google-reviews-link:hover {
+    display: inline-block;
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    margin-top: 3rem;
+    text-decoration: none;
+	transform: translateY(-3px);
+	transition: transform 0.5s ease, background 0.5s ease; }
 
 @media (max-width: 768px) {
     .google-reviews-header {
@@ -825,11 +834,12 @@ footer p {
 footer a {
     color: #fff;
     text-decoration: none;
+	
 }
 
 footer a:hover {
-    transform: scale(1.06);
-}
+  transform: translateY(-3px);
+	transition: transform 0.5s ease, background 0.5s ease; }
 
 .social-links {
     display: flex;
