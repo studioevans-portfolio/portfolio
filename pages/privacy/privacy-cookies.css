@@ -17,29 +17,26 @@ html {
 
 
 /* ========================================
-   SQUARES
+   CIRCLES
 ======================================== */
 
 
 
-.square {
+.circle {
     display: inline-block;
     width: 9px;
     height: 9px;
     margin: 0 7px;
     vertical-align: middle;
+		border-radius: 50%;
 }
 
-.square.blue {
-    background: #0165e8;
+.circle.blue {
+    background: #009eff;
 }
 
-.square.yellow {
-    background: #f0b51c;
-}
-
-.square.red {
-    background: #f13746;
+.circle.light-blue {
+    background: #99ddff;
 }
 
 
@@ -109,12 +106,12 @@ h1 {
 ======================================== */
 
 ::selection {
-    background: #0164DF;
+    background: #009eff;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #0164DF;
+    background: #009eff;
     color: #ffffff;
 }
 
@@ -176,7 +173,7 @@ transform: translateY(-3px);
 	transition: transform 0.5s ease, background 0.5s ease; }
 
 nav a:last-child {
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
 
     padding: 5px 20px;
@@ -306,8 +303,8 @@ nav a:last-child:hover {
 }
 
 .privacy-content a:hover {
-    color: #0164DF;
-    text-decoration-color: #0164DF;
+    color: #009eff;
+    text-decoration-color: #009eff;
 }
 
 

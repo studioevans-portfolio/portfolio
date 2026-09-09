@@ -9,12 +9,12 @@ html {
 }
 
 ::selection {
-    background: #0164DF;
+    background: #009eff;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #0164DF;
+    background: #009eff;
     color: #ffffff;
 }
 
@@ -25,7 +25,7 @@ html {
    BUTTONS
 ======================================== */
 .button-nav {
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
     padding: 10px 5px;
     text-decoration: none;
@@ -45,7 +45,7 @@ transform: translateY(-3px);
 
 .button-primary {
     display: inline-block;
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
     padding: 10px 50px;
     text-decoration: none;
@@ -67,7 +67,7 @@ color: #000 !important;
 
 .button-secondary {
      display: inline-block;
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
     padding: 5px 10px;
     text-decoration: none;
@@ -85,7 +85,7 @@ color: #000 !important;
     width: auto;
 	margin: 23px;
     padding: 10px !important;
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
 
     border: 0;
@@ -112,7 +112,7 @@ color: #000 !important;
 
 .contact-form button {
   color: #fff !important;
-	background: #0164DF;
+	background: #009eff;
 	padding: 0.8rem 1.5rem;
     border: 0;
     border-radius: 12px;
@@ -263,7 +263,7 @@ transform: translateY(-3px);
 	transition: transform 0.5s ease, background 0.5s ease; }
 
 nav a:last-child {
-    background: #0164DF;
+    background: #009eff;
     color: #fff !important;
     padding: 5px 20px;
     border-radius: 8px;
@@ -523,7 +523,7 @@ nav a:last-child {
 
 
 /* ========================================
-   TAGS / SQUARES
+   TAGS / CIRCLES
 ======================================== */
 
 .tags {
@@ -533,25 +533,23 @@ nav a:last-child {
     opacity: 50% !important;
 }
 
-.square {
+.circle {
     display: inline-block;
     width: 9px;
     height: 9px;
     margin: 0 7px;
     vertical-align: middle;
+	border-radius: 50%;
 }
 
-.square.blue {
-    background: #0165e8;
+.circle.blue {
+    background: #009eff;
 }
 
-.square.yellow {
-    background: #f0b51c;
+.circle.light-blue {
+    background: #99ddff;
 }
 
-.square.red {
-    background: #f13746;
-}
 
 
 /* ========================================
@@ -640,7 +638,7 @@ nav a:last-child {
 }
 
 .contact-marker-blue,
-.contact-marker-yellow,
+.contact-marker-light-blue,
 .contact-marker-red {
     width: 20px;
     height: 20px;
@@ -651,13 +649,10 @@ nav a:last-child {
     background: #0165e8;
 }
 
-.contact-marker-yellow {
-    background: #f0b51c;
+.contact-marker-light-blue {
+    background: #99ddff;
 }
 
-.contact-marker-red {
-    background: #f13746;
-}
 
 .contact-intro p {
     max-width: 500px;
