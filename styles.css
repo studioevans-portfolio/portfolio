@@ -33,6 +33,7 @@ html {
     font-size: 0.8rem;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
+		font-weight: 400;
 }
 
 
@@ -41,6 +42,7 @@ transform: translateY(-3px);
 	 transition: transform 0.5s ease, background 0.5s ease;
 	background: white;
 	color: black !important;
+		font-weight: 400;
 }
 
 .button-primary {
@@ -49,10 +51,12 @@ transform: translateY(-3px);
     color: #fff !important;
     padding: 10px 50px;
     text-decoration: none;
+	font-weight: 400;
     border-radius: 8px;
     font-size: 0.8rem;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
+		font-weight: 400;
 
 }
 
@@ -62,6 +66,7 @@ background: #fff;
 color: #000 !important;
  transform: translateY(-3px);
 	 transition: transform 0.5s ease, background 0.5s ease;
+		font-weight: 400;
 
 }
 
@@ -75,6 +80,7 @@ color: #000 !important;
     font-size: 0.8rem;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
+		font-weight: 400;
  
 }
 
@@ -99,6 +105,7 @@ color: #000 !important;
     letter-spacing: 3px;
 
     cursor: pointer;
+		font-weight: 400;
 
 }
 
@@ -107,6 +114,7 @@ color: #000 !important;
 	background: #fff;
  transform: translateY(-3px);
 	 transition: transform 0.5s ease, background 0.5s ease;
+		font-weight: 400;
 }
 
 
@@ -120,6 +128,7 @@ color: #000 !important;
 	font-size: 0.8rem;
     cursor: pointer;
     letter-spacing: 3px;
+		font-weight: 400;
 }
 
 
@@ -129,6 +138,7 @@ color: #000 !important;
 	background: #fff;
 	 transform: translateY(-2px);
 	 transition: transform 0.5s ease, background 0.5s ease;
+		font-weight: 400;
 }
 /* ========================================
    GENERAL

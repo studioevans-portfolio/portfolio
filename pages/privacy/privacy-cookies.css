@@ -165,12 +165,14 @@ nav {
     font-size: 0.7rem;
 
     transition: transform 0.2s ease;
+		font-weight: 400;
 }
 
 nav a:hover {
     text-decoration: none;
 transform: translateY(-3px);
 	transition: transform 0.5s ease, background 0.5s ease; }
+	font-weight: 400;
 
 nav a:last-child {
     background: #009eff;
@@ -179,11 +181,13 @@ nav a:last-child {
     padding: 5px 20px;
 
     border-radius: 8px;
+		font-weight: 400;
 }
 
 nav a:last-child:hover {
     background: #fff;
     color: #111 !important;
+		font-weight: 400; !important;
 }
 
 
