@@ -50,6 +50,7 @@ transform: translateY(-3px);
     background: #009eff;
     color: #fff !important;
     padding: 10px 50px;
+	margin-top: 20px;
     text-decoration: none;
 	font-weight: 400;
     border-radius: 8px;
@@ -145,7 +146,7 @@ color: #000 !important;
 ======================================== */
 
 body {
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    font-family: "Google Sans", Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
@@ -156,27 +157,62 @@ body {
 
 p {
     margin-bottom: 20px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    font-family: "Google Sansh", Helvetica, Arial, sans-serif;
 }
 
-.intro {
-    margin-bottom: 20px;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 100 !important;
-    opacity: 50% !important;
-}
+
 
 .small-intro {
     font-size: 0.7rem;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    font-family: "Google Sans", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
 }
 
-h1,
-h3,
-h4 {
+
+
+h1{
+	 font-family: "Google Sans", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+	font-size: 1.3rem !important;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 40px !important;
+}
+
+
+.large-title-1 {
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+	font-size: 5.5rem !important;
+	line-height: 60px !important;
+	font-weight: 600;
+}
+
+.large-title-2 {
+	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+	font-size: 5.5rem !important;
+	line-height: 60px !important;
+	font-weight: 600;
+}
+
+
+/* h2 */
+.intro {
+    margin-bottom: 20px;
+    font-family: "Google Sans", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+	line-height: 1.7rem;
+    font-weight: 100 !important;
+	margin-top: 40px;
+
+}
+
+h3, h4 {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -184,10 +220,7 @@ h4 {
     color: white;
 }
 
-h1 a {
-    color: #ffffff;
-    text-decoration: none;
-}
+	
 
 h4 {
     font-size: 19px;
@@ -437,7 +470,7 @@ nav a:last-child {
 
 .google-reviews {
     position: relative;
-	font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+	font-family: "Google Sans", Helvetica, Arial, sans-serif;
     overflow: hidden;
     border-top: 1px solid var(--border-color);
     margin-bottom: 50px;
@@ -543,7 +576,10 @@ nav a:last-child {
     opacity: 50% !important;
 }
 
-.circle {
+
+
+.circle-blue {
+    background: #009eff;
     display: inline-block;
     width: 9px;
     height: 9px;
@@ -552,12 +588,14 @@ nav a:last-child {
 	border-radius: 50%;
 }
 
-.circle.blue {
-    background: #009eff;
-}
-
-.circle.light-blue {
+.circle-light-blue {
     background: #99ddff;
+	    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 7px;
+    vertical-align: middle;
+	border-radius: 50%;
 }
 
 
@@ -1084,17 +1122,32 @@ footer a:hover {
         margin-top: -45px;
     }
 
-    .intro {
+   
+    .hero h1 {
+        font-size: 2.5rem;
+		margin-top: 0px;
+		margin-bottom: 20px !important;
+    }
+	
+		.large-title-1 {
+font-size: 3.2rem !important;
+			margin-bottom: 0px;
+	}
+	
+		.large-title-2 {
+font-size: 3.2rem !important;
+margin-top: -15px !important;
+	}
+	
+	
+	 .intro {
         font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
         font-size: 16px;
         font-weight: 100 !important;
         line-height: 1.6;
+		margin-top: 20px;
     }
 	
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
 
     #testimonials p {
         margin-bottom: 40px;
