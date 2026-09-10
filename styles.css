@@ -134,16 +134,17 @@ h1 {
     margin-bottom: 40px;
 }
 
-.large-title-1,
-.large-title-2 {
+.large-title {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     color: #ffffff;
-    text-decoration: none;
     font-size: 5.5rem;
-    line-height: 60px;
-    font-weight: 600;
+    line-height: 75px;
+    font-weight: 400;
 }
 
+.large-title span {
+    color: #009eff;
+}
 /* h2 */
 .intro {
     margin-top: 40px;
@@ -961,7 +962,7 @@ footer a:hover {
     }
 
     .hero {
-        padding: 0;
+        margin-top: 0px;
     }
 
     .hero-grid {
@@ -981,15 +982,13 @@ footer a:hover {
 
    
 
-    .large-title-1 {
-        font-size: 3.2rem;
+    .large-title {
+        font-size: 3.3rem;
         margin-bottom: 0;
+		line-height: 50px;
+		margin-top: -20px;
     }
-
-    .large-title-2 {
-        font-size: 3.2rem;
-        margin-top: -15px;
-    }
+   
 
     .intro {
         font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
@@ -997,6 +996,7 @@ footer a:hover {
         font-weight: 100;
         line-height: 1.6;
         margin-top: 20px;
+		margin-bottom: 2px;
     }
 
     #testimonials p {
