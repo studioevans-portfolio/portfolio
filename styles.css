@@ -52,6 +52,7 @@ html {
     display: inline-block;
     padding: 10px 50px;
     margin-top: 20px;
+	margin-bottom: 60px;
     transition: transform 0.5s ease, background 0.5s ease, color 0.5s ease;
 }
 
@@ -133,7 +134,7 @@ h1 {
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
-    margin: 30px 0 40px;
+    margin: 50px 0 40px;
 }
 
 .large-title {
@@ -519,6 +520,7 @@ nav a:last-child:hover {
 /* ========================================
    TESTIMONIALS
 ======================================== */
+
 
 .testimonial-grid {
     display: grid;
