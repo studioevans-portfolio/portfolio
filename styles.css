@@ -504,8 +504,28 @@ nav a:last-child:hover {
 }
 
 
+.footer-circle-blue,
+.footer-circle-light-blue {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 7px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.footer-circle-blue {
+    background: #009eff;
+}
+
+.footer-circle-light-blue {
+    background: #99ddff;
+}
+
+
+
 /* ========================================
-   DIVIDERS
+   DIVIDER
 ======================================== */
 
 .divider {
@@ -1032,6 +1052,30 @@ footer a:hover {
 
 h3 {
     margin-top: -30px;
+}
+
+.footer-circle-blue, .footer-circle-light-blue {
+	display: none;
+}
+
+.divider {
+	display: none;
+}
+
+.google-reviews-link {
+margin-top: 0px;
+}
+
+.google-rating {
+	margin-bottom: -40px;
+}
+
+.contact-intro p {
+    line-height: 1.2;
+}
+
+.contact-form {
+	margin-bottom: 30px;
 }
 
 /* ========================================
