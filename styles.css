@@ -26,7 +26,6 @@ html {
 .button-nav,
 .button-primary,
 .button-secondary,
-.card-button,
 .contact-form button {
     background: #009eff;
     color: #fff;
@@ -40,8 +39,7 @@ html {
 
 .button-nav,
 .button-primary,
-.button-secondary,
-.card-button {
+.button-secondary {
     border-radius: 8px;
 }
 
@@ -64,12 +62,18 @@ html {
 }
 
 .card-button {
+
+    color: #fff;
+	outline: 0.1rem solid;
     display: block;
     width: auto;
+	  font-family: "Stack Sans Notch", Helvetica;
     margin: 23px;
-    padding: 10px !important;
-    border: 0;
+    padding: 10px !important;;
+	 letter-spacing: 3px;
+ border-radius: 8px;
     text-align: center;
+	font-size: 0.8rem;
     transition: transform 0.5s ease, background 0.5s ease, color 0.5s ease;
 }
 
@@ -88,8 +92,8 @@ html {
 .button-secondary:hover,
 .card-button:hover,
 .contact-form button:hover {
-    background: #fff;
-    color: #000;
+	background: #fff;
+	color: #000;
     transform: translateY(-3px);
 }
 
@@ -198,7 +202,8 @@ a:visited {
 }
 
 .job-copy {
-    margin-bottom: 40px;
+	margin-top: -5px;
+    margin-bottom: 30px;
     font-size: 15px;
     line-height: 25px;
 }
@@ -469,7 +474,7 @@ nav a:last-child:hover {
 
 .tags {
     font-size: 14px;
-    margin-top: -10px;
+    margin-top: -20px;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     opacity: 0.5;
 }
