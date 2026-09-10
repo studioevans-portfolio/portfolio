@@ -157,6 +157,10 @@ h1 {
     font-weight: 100;
 }
 
+.no-break {
+    white-space: nowrap;
+}
+
 h3,
 h4 {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
@@ -179,6 +183,9 @@ a:visited {
     color: inherit;
     text-decoration: none;
 }
+
+
+
 
 
 /* ========================================
