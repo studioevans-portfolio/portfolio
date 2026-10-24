@@ -697,10 +697,9 @@ nav a:last-child:hover {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 32px;
-
     width: calc(100% - 48px);
     max-width: 1160px;
-    margin: 70px auto;
+    margin: 0px auto;
     padding: 0;
 
     box-sizing: border-box;
