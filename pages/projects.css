@@ -83,7 +83,10 @@
     overflow: hidden;
 }
 
-
+.hero-phone {
+    transform: scale(0.85);
+    transform-origin: bottomcenter;
+}
 
 /* Slow webpage scrolling */
 @keyframes websiteScroll {
