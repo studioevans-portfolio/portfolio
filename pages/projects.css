@@ -66,6 +66,25 @@
     background: #090909;
 }
 
+
+
+.phone-page-image {
+    width: 100%;
+    animation: websiteScroll 28s ease-in-out infinite alternate;
+}
+
+.phone-page-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.phone-screen {
+    overflow: hidden;
+}
+
+
+
 /* Slow webpage scrolling */
 @keyframes websiteScroll {
     from {
