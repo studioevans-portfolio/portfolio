@@ -439,7 +439,7 @@ nav a:last-child:hover {
 
 .hero {
     margin-top: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 }
 
 .hero-grid {
@@ -693,17 +693,20 @@ nav a:last-child:hover {
 /* Project timeline */
 
 /* Timeline aligned to Studio Evans content frame */
+
 .project-timeline {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;
-    width: calc(100% - 48px);
-    max-width: 1160px;
-    margin: 0px auto;
-    padding: 0;
+    gap: 70px;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0 100px;
 
     box-sizing: border-box;
 }
+
 
 
 .timeline-item {
