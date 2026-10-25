@@ -440,6 +440,7 @@ nav a:last-child:hover {
 .hero {
     margin-top: 30px;
 	padding-bottom: 25px;
+		border-bottom: 1px solid #333;
 }
 
 .hero-grid {
@@ -809,6 +810,7 @@ nav a:last-child:hover {
     align-items: center;
     gap: 70px;
     width: 100%;
+	padding-top: 60px;
 }
 
 .responsive-showcase .responsive-image {
