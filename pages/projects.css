@@ -966,12 +966,11 @@ nav a:last-child:hover {
     width: 100%;
 }
 
-
 @media (max-width: 600px) {
     .view.site {
         justify-content: flex-start;
-		padding-left: 20px;
-		margin-top: -80px;
+        padding-left: 20px;
+        margin-top: 0;
     }
 }
 
