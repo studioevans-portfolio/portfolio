@@ -85,7 +85,7 @@
 
 .hero-phone {
     transform: scale(0.85);
-    transform-origin: bottomcenter;
+transform-origin: bottom center;
 }
 
 /* Slow webpage scrolling */
@@ -808,26 +808,18 @@ nav a:last-child:hover {
    TIMELINE
 ======================================== */
 
-
-
-/* Project timeline */
-
-/* Timeline aligned to Studio Evans content frame */
-
+/* Project timeline aligned with main content */
 .project-timeline {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 100px;
-    width: 100%;
-    max-width: 1100px;
+    gap: 40px;
+    width: min(1100px, 90%);
     margin: 0 auto;
-    padding-top: 60px;
-	padding-bottom: 60px;
+    padding: 60px 0;
     box-sizing: border-box;
 }
 
-
-
+/* Timeline item */
 .timeline-item {
     position: relative;
     min-width: 0;
@@ -890,20 +882,14 @@ nav a:last-child:hover {
     opacity: 0.8;
 }
 
+/* ========================================
+   TABLET: 601px–1200px
+======================================== */
 
-
-/* Tablet */
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 1200px) {
     .project-timeline {
         width: 90%;
-        max-width: 1100px;
-        margin: 50px auto;
-        gap: 20px;
-        box-sizing: border-box;
-    }
-
-    .timeline-item {
-        min-width: 0;
+        gap: 24px;
     }
 
     .timeline-item h3 {
@@ -911,31 +897,23 @@ nav a:last-child:hover {
     }
 }
 
-/* Mobile */
+/* ========================================
+   MOBILE: 600px AND BELOW
+======================================== */
+
 @media (max-width: 600px) {
     .project-timeline {
         width: 90%;
         grid-template-columns: 1fr;
         gap: 36px;
         margin: 45px auto;
+        padding: 0;
+    }
+
+    .timeline-item h3 {
+        font-size: 22px;
     }
 }
-
-
-
-/* Mobile */
-/* Mobile layout */
-@media (max-width: 600px) {
-    .project-timeline {
-        width: calc(100% - 40px);
-        grid-template-columns: 1fr;
-        gap: 36px;
-        margin: 45px auto;
-    }
-}
-
-
-
 
 
 
@@ -1576,8 +1554,14 @@ margin-top: 0px;
 
 /* MOBILE: Phone only */
 @media (max-width: 600px) {
+    .hero-image {
+        display: block !important;
+    }
+
     .hero-phone {
         display: block !important;
+        width: 245px;
+        margin: 20px 0;
     }
 
     .laptop-mockup {
@@ -1587,6 +1571,10 @@ margin-top: 0px;
 
 /* TABLET: Laptop only */
 @media (min-width: 601px) and (max-width: 1023px) {
+    .hero-image {
+        display: none !important;
+    }
+
     .hero-phone {
         display: none !important;
     }
@@ -1596,13 +1584,65 @@ margin-top: 0px;
     }
 }
 
-/* DESKTOP: Show both */
+/* DESKTOP: Both */
 @media (min-width: 1024px) {
+    .hero-image {
+        display: block !important;
+    }
+
     .hero-phone {
         display: block !important;
     }
 
     .laptop-mockup {
         display: block !important;
+    }
+}
+
+
+
+/* Fix hero phone layout */
+.hero-grid {
+    grid-template-columns: minmax(0, 1fr) 400px !important;
+}
+
+.hero-image {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-phone {
+    display: block !important;
+    position: relative;
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    transform: scale(0.85);
+    transform-origin: center center;
+}
+
+/* Stack hero on smaller screens */
+@media (max-width: 820px) {
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-image {
+        justify-content: flex-start;
+    }
+
+    .hero-phone {
+        width: 245px;
+        margin: 20px 0;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 820px) {
+    .hero-image,
+    .hero-phone {
+        display: none !important;
     }
 }
