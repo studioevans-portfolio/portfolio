@@ -219,7 +219,7 @@
     }
 
     .laptop-screen {
-        height: 400px;
+        height: 350px;
         padding: 5px;
         border-radius: 9px 9px 3px 3px;
     }
@@ -953,8 +953,14 @@ nav a:last-child:hover {
 }
 
 
-
-
+/* ========================================
+   VIEW SITE BUTTON
+======================================== */
+.view.site {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 /* ========================================
