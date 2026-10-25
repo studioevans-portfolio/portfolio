@@ -238,7 +238,7 @@
 
 
 
-/* Desktop: show laptop */
+/* Desktop: show both */
 .laptop-mockup {
     display: block;
 }
@@ -247,18 +247,17 @@
     display: block;
 }
 
-/* Mobile: hide laptop and show phone */
-@media (max-width: 768px) {
+/* Mobile: hide laptop, keep phone visible */
+@media (max-width: 600px) {
     .laptop-mockup {
-        display: none;
+        display: none !important;
     }
 
     .hero-phone {
-        display: block;
+        display: block !important;
         width: 245px;
         max-width: 100%;
         margin: 0 auto;
-        transform: none;
     }
 }
 
@@ -1352,14 +1351,23 @@ footer a:hover {
    TABLET - 820px
 ======================================== */
 
+
 @media (max-width: 820px) {
     .small-intro {
         margin-top: 10px;
     }
 
     .hero-image {
-        display: none;
+        display: block;
+        width: 100%;
     }
+
+    .hero-phone {
+    display: block;
+    width: 245px;
+    max-width: 100%;
+    margin: 20px 0;
+}
 
     .container {
         grid-template-columns: 1fr;
@@ -1566,4 +1574,35 @@ margin-top: 0px;
 
 
 
+/* MOBILE: Phone only */
+@media (max-width: 600px) {
+    .hero-phone {
+        display: block !important;
+    }
 
+    .laptop-mockup {
+        display: none !important;
+    }
+}
+
+/* TABLET: Laptop only */
+@media (min-width: 601px) and (max-width: 1023px) {
+    .hero-phone {
+        display: none !important;
+    }
+
+    .laptop-mockup {
+        display: block !important;
+    }
+}
+
+/* DESKTOP: Show both */
+@media (min-width: 1024px) {
+    .hero-phone {
+        display: block !important;
+    }
+
+    .laptop-mockup {
+        display: block !important;
+    }
+}
