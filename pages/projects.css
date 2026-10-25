@@ -156,7 +156,7 @@
 .laptop-screen {
     position: relative;
     width: 100%;
-    height: 420px;
+    aspect-ratio: 16 / 10;
     padding: 9px;
     overflow: hidden;
     box-sizing: border-box;
@@ -175,31 +175,10 @@
         0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.laptop-screen img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: none;
-    margin: 0;
-    border-radius: 3px;
-}
-
-.laptop-base {
-    position: relative;
-    width: 112%;
-    height: 12px;
-    margin-left: -6%;
-    background: linear-gradient(to bottom, #777, #292929 45%, #111);
-    border-radius: 2px 2px 12px 12px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-}
-
-
-
 .laptop-viewport {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 100%;
     overflow: hidden;
     border-radius: 3px;
 }
@@ -212,20 +191,25 @@
     margin: 0;
 }
 
+.laptop-base {
+    position: relative;
+    width: 112%;
+    height: 12px;
+    margin-left: -6%;
+    background: linear-gradient(to bottom, #777, #292929 45%, #111);
+    border-radius: 2px 2px 12px 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
 
+/* Tablet and mobile */
 @media (max-width: 768px) {
     .laptop-mockup {
-        width: 90%;
+        width: 100%;
     }
 
     .laptop-screen {
-        height: 350px;
         padding: 5px;
         border-radius: 9px 9px 3px 3px;
-    }
-
-    .laptop-viewport {
-        height: 388px;
     }
 
     .laptop-base {
