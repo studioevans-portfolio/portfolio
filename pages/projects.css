@@ -153,17 +153,14 @@
     animation: laptopFloat 5s ease-in-out infinite;
 }
 
-/* Laptop screen frame */
 .laptop-screen {
-    --laptop-screen-height: 420px;
-
     position: relative;
     width: 100%;
-    height: var(--laptop-screen-height);
+    height: 420px;
     padding: 9px;
     overflow: hidden;
     box-sizing: border-box;
-
+    isolation: isolate;
     background: linear-gradient(
         145deg,
         #414141,
@@ -171,78 +168,67 @@
         #292929 70%,
         #080808
     );
-
     border: 1px solid #555;
     border-radius: 16px 16px 5px 5px;
-
     box-shadow:
         0 25px 60px rgba(0, 0, 0, 0.35),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Website screenshot */
 .laptop-screen img {
     display: block;
     width: 100%;
     height: auto;
     max-width: none;
     margin: 0;
-    border-radius: 5px;
-
-    animation: laptopWebsiteScroll 32s linear infinite;
-    will-change: transform;
+    border-radius: 3px;
 }
 
-/* Laptop bottom/base */
 .laptop-base {
     position: relative;
     width: 112%;
     height: 12px;
     margin-left: -6%;
-
-    background: linear-gradient(
-        to bottom,
-        #777,
-        #292929 45%,
-        #111
-    );
-
+    background: linear-gradient(to bottom, #777, #292929 45%, #111);
     border-radius: 2px 2px 12px 12px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Scroll webpage from top to bottom */
-@keyframes laptopWebsiteScroll {
-    0% {
-        transform: translateY(0);
-    }
 
-    100% {
-        transform: translateY(
-            calc(
-                var(--laptop-screen-height)
-                - 20px
-                - var(--laptop-image-height, 100%)
-            )
-        );
-    }
+
+.laptop-viewport {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
-/* Gentle floating movement */
+.laptop-viewport img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .laptop-viewport {
+        height: 228px;
+    }
+}
 @keyframes laptopFloat {
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-8px);
     }
 }
 
-/* Mobile sizing */
 @media (max-width: 768px) {
     .laptop-screen {
-        --laptop-screen-height: 240px;
+        height: 240px;
         padding: 5px;
         border-radius: 9px 9px 3px 3px;
     }
@@ -252,14 +238,11 @@
     }
 }
 
-/* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
-    .laptop-mockup,
-    .laptop-screen img {
+    .laptop-mockup {
         animation: none;
     }
 }
-
 /* ========================================
    RESET
 ======================================== */
