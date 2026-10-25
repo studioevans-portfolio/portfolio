@@ -801,64 +801,39 @@ nav a:last-child:hover {
    RESPONSIVE WEB SHOWCASE
 ======================================== */
 
+/* CHALLENGE & DEVELOPMENT LAYOUT */
 
-.responsive-showcase {
-    padding: 80px 0 100px;
-    border-top: 1px solid #222;
-}
-
-.responsive-heading {
-    max-width: 700px;
-}
-
-.responsive-heading .small-intro {
-    color: #999;
-    margin-bottom: 15px;
-}
-
-.responsive-heading h2 {
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -1.5px;
-    margin: 0 0 20px;
-}
-
-.responsive-heading h2 span {
-    color: #009eff;
-}
-
-.responsive-heading > p:last-child {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #bbb;
-    max-width: 1200px;
-}
-
-.responsive-image {
+.responsive-showcase .responsive-layout {
+    display: grid !important;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 70px;
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
-.responsive-image img {
+.responsive-showcase .responsive-image {
+    width: 100%;
+    min-width: 0;
+}
+
+.responsive-showcase .responsive-image img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .responsive-showcase {
-        padding: 55px 0 65px;
-    }
-
-    .responsive-heading {
-        margin-bottom: 30px;
-    }
+.responsive-showcase .responsive-heading {
+    width: 100%;
+    min-width: 0;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+    .responsive-showcase .responsive-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
 
 
 
