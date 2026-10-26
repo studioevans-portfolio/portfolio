@@ -1017,7 +1017,7 @@ footer a:hover {
    MOBILE - 768px
 ======================================== */
 
-@media (max-width: 768px) {
+@media (max-width : 473px ){
     .small-intro {
         margin-top: 0;
     }
@@ -1117,6 +1117,13 @@ footer a:hover {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+	
+	.project-carousel {
+    margin-top: -100px;
+		  width: calc(100% + 10vw);
+    max-width: none;
+    margin-left: -5vw;
+}
 }
 
 
@@ -1173,7 +1180,3 @@ margin-top: 0px;
         animation: none;
     }
 }
-
-
-
-
