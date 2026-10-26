@@ -1186,3 +1186,23 @@ margin-top: 0px;
         animation: none;
     }
 }
+
+
+
+
+/* Hide Projects title on desktop */
+.mobile-projects-title {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-projects-title {
+        display: block;
+        text-align: left;
+        font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: -60px;
+    }
+}
+}
