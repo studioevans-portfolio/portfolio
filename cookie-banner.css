@@ -92,7 +92,7 @@
    768px and below
 ======================================== */
 
-@media (max-width: 768px) {
+@media (max-width : 473px ){
 
     #cookie-banner {
         left: 15px;
