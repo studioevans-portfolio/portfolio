@@ -151,15 +151,30 @@ Web Design<span class="circle-light-blue"></span>Graphic Design<span class="circ
                 </div>
 
 
-                <div class="hero-image">
+             <!-- ROTATING HERO START -->	     
+<div class="project-carousel">
+    <div class="project-card project-left">
+        <img src="images/rsk.gif" alt="Animation">
+    </div>
 
-                  <img
-                        id="hero-image"
-                        src="images/cover-right.webp"
-                        alt="Studio Evans portfolio work"
-                    >
+    <div class="project-card project-centre">
+        <img src="images/cactus-mockup.webp" alt="Product Catalogue">
+    </div>
 
-                </div>
+    <div class="project-card project-right">
+        <img src="images/gg-laptop.webp" alt="Business Cards">
+    </div>
+</div>
+
+				
+			    <!-- ROTATING HERO END -->	
+				
+				
+				
+				
+				
+				
+				
 
           </div>
 
@@ -989,6 +1004,29 @@ Web Design<span class="circle-light-blue"></span>Graphic Design<span class="circ
 
     });
 
+</script>
+		
+		
+		
+		    <!-- PROJECT HERO ROTATION -->
+		
+		<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.project-carousel');
+    if (!carousel) return;
+
+    setInterval(() => {
+        const left = carousel.querySelector('.project-left');
+        const centre = carousel.querySelector('.project-centre');
+        const right = carousel.querySelector('.project-right');
+
+        if (!left || !centre || !right) return;
+
+        left.classList.replace('project-left', 'project-centre');
+        centre.classList.replace('project-centre', 'project-right');
+        right.classList.replace('project-right', 'project-left');
+    }, 3000);
+});
 </script>
 
     <!-- COOKIE BANNER -->
