@@ -1664,3 +1664,10 @@ margin-top: 0px;
         display: none !important;
     }
 }
+
+
+@media (max-width: 820px) {
+    .hero .button-primary {
+        margin-bottom: 0;
+    }
+}
