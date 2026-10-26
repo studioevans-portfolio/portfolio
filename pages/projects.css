@@ -589,6 +589,8 @@ nav a:last-child:hover {
    PORTFOLIO
 ======================================== */
 
+
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -650,7 +652,7 @@ nav a:last-child:hover {
 
 .shots {
 	padding-top: 60px;
-	padding-bottom: 60px;
+
 }
 
 /* ========================================
@@ -840,8 +842,8 @@ nav a:last-child:hover {
     gap: 40px;
     width: min(1100px, 90%);
     margin: 0 auto;
-    padding-top: 80px;
-	padding-bottom: 80px;
+    padding-top: 40px;
+	padding-bottom: 100px;
     box-sizing: border-box;
 }
 
