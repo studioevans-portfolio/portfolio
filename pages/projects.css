@@ -815,7 +815,8 @@ nav a:last-child:hover {
     gap: 40px;
     width: min(1100px, 90%);
     margin: 0 auto;
-    padding: 60px 0;
+    padding-top: 80px;
+	padding-bottom: 100px;
     box-sizing: border-box;
 }
 
@@ -948,6 +949,12 @@ nav a:last-child:hover {
     min-width: 0;
 }
 
+.responsive-layout h2 {
+	padding-bottom: 15px;
+}
+
+
+
 /* Mobile */
 @media (max-width: 768px) {
     .responsive-showcase .responsive-layout {
@@ -956,23 +963,6 @@ nav a:last-child:hover {
     }
 }
 
-
-/* ========================================
-   VIEW SITE BUTTON
-======================================== */
-.view.site {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-@media (max-width: 600px) {
-    .view.site {
-        justify-content: flex-start;
-        padding-left: 20px;
-        margin-top: 0;
-    }
-}
 
 /* ========================================
    TESTIMONIALS
