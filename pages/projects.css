@@ -593,6 +593,7 @@ nav a:last-child:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    align-items: stretch;
 }
 
 .card {
@@ -601,15 +602,20 @@ nav a:last-child:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.card img {
+/* Consistent image dimensions */
+.card > a:first-child img {
     width: 100%;
     aspect-ratio: 8 / 5;
+    height: auto;
     object-fit: cover;
     display: block;
 }
 
+/* Card text */
 .card h4,
 .card p {
     padding: 0 20px;
@@ -620,13 +626,32 @@ nav a:last-child:hover {
     margin-bottom: 15px;
 }
 
-.card a {
+.card p {
+    margin-top: 0;
+}
+
+/* Button only */
+.card .card-button {
     display: block;
     padding: 20px;
     color: white;
     margin-top: auto;
+    text-align: center;
 }
 
+
+.card .card-button:hover {
+    color: #000;
+}
+
+
+
+
+
+.shots {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
 /* ========================================
    GOOGLE REVIEWS
@@ -816,7 +841,7 @@ nav a:last-child:hover {
     width: min(1100px, 90%);
     margin: 0 auto;
     padding-top: 80px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
     box-sizing: border-box;
 }
 
@@ -949,9 +974,7 @@ nav a:last-child:hover {
     min-width: 0;
 }
 
-.responsive-layout h2 {
-	padding-bottom: 15px;
-}
+
 
 
 
