@@ -1010,6 +1010,12 @@ footer a:hover {
         font-size: 4rem;
         line-height: 15px;
     }
+		.project-carousel {
+    margin-top: -100px;
+		  width: calc(100% + 10vw);
+    max-width: none;
+    margin-left: -5vw;
+}
 }
 
 
