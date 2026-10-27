@@ -925,6 +925,8 @@ footer a:hover {
 }
 
 
+
+
 /* ========================================
    HERO ENTRANCE ANIMATION
 ======================================== */
@@ -979,6 +981,8 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
 
 
 /* ========================================
@@ -1162,6 +1166,22 @@ margin-top: 0px;
 	margin-bottom: 30px;
 }
 
+
+
+
+
+/* ========================================
+   MOBILE - 480px
+======================================== */
+
+
+@media screen and (max-width: 800px) {
+    .portfolio-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+}
 /* ========================================
    DESKTOP / LAPTOP - 1366px
 ======================================== */
