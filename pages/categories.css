@@ -653,10 +653,10 @@ nav a:last-child:hover {
 
 
 
+
 /* ========================================
    PRICING
 ======================================== */
-
 
 .pricing-section {
   padding: 80px 24px;
@@ -704,14 +704,15 @@ nav a:last-child:hover {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  border: 1px solid #dedede;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
-  background: #fff;
-  color: #171717;
+  background: transparent;
+  color: #fff;
 }
 
 .pricing-card-featured {
-  border: 2px solid #171717;
+  border: 2px solid #fff;
+  background: transparent;
 }
 
 .pricing-badge {
@@ -719,8 +720,8 @@ nav a:last-child:hover {
   align-self: flex-start;
   margin-bottom: 18px;
   padding: 7px 10px;
-  background: #171717;
-  color: #fff;
+  background: #fff;
+  color: #171717;
   border-radius: 4px;
   font-size: 10px;
   font-weight: 600;
@@ -731,12 +732,13 @@ nav a:last-child:hover {
   font-size: 22px;
   line-height: 1.3;
   margin: 0 0 12px;
+  color: #fff;
 }
 
 .pricing-description {
   font-size: 14px;
   line-height: 1.6;
-  color: #626262;
+  color: rgba(255, 255, 255, 0.75);
   min-height: 66px;
   margin: 0 0 20px;
 }
@@ -746,6 +748,7 @@ nav a:last-child:hover {
   font-weight: 700;
   letter-spacing: -1px;
   margin: 0 0 24px;
+  color: #fff;
 }
 
 .pricing-price span {
@@ -753,7 +756,7 @@ nav a:last-child:hover {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #626262;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 4px;
 }
 
@@ -761,7 +764,7 @@ nav a:last-child:hover {
   list-style: none;
   padding: 24px 0 0;
   margin: 0;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .pricing-card li {
@@ -770,6 +773,7 @@ nav a:last-child:hover {
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 1.5;
+  color: #fff;
 }
 
 .pricing-card li::before {
@@ -777,6 +781,7 @@ nav a:last-child:hover {
   position: absolute;
   left: 0;
   top: 0;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -784,27 +789,30 @@ nav a:last-child:hover {
   margin-top: auto;
   padding-top: 16px;
   font-size: 12px;
-  color: #626262;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.pricing-button {
+.pricing-card .pricing-button,
+.pricing-card .pricing-button:visited {
   display: block;
   margin-top: 16px;
   padding: 14px 18px;
-  border: 1px solid #171717;
+  border: 1px solid #fff;
   border-radius: 5px;
-  background: #171717;
-  color: #fff;
+  background: transparent;
+  color: #fff !important;
   text-align: center;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
+  opacity: 1;
+  visibility: visible;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.pricing-button:hover {
-  background: transparent;
-  color: #171717;
+.pricing-card .pricing-button:hover {
+  background: #fff;
+  color: #171717 !important;
 }
 
 .pricing-note {
@@ -813,7 +821,7 @@ nav a:last-child:hover {
   text-align: center;
   font-size: 12px;
   line-height: 1.7;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 900px) {
@@ -843,6 +851,45 @@ nav a:last-child:hover {
 }
 
 
+
+/* PRICING FOOTER */
+
+.pricing-footer {
+  max-width: 900px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+
+.pricing-footer-block h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pricing-footer-block p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+  .pricing-footer {
+    margin-top: 32px;
+    gap: 24px;
+    padding: 0 8px;
+  }
+
+  .pricing-footer-block p {
+    font-size: 13px;
+  }
+}
 
 /* ========================================
    TESTIMONIALS
