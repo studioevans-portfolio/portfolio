@@ -377,6 +377,104 @@ nav a:last-child:hover {
 
 
 
+
+/* ========================================
+   LOGOS
+======================================== */
+
+.clients-section {
+    width: min(1100px, 100%);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: #111;
+}
+
+.clients-heading {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    padding: 0 5%;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #888;
+}
+
+.logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 100px;
+    position: relative;
+    left: auto;
+    animation: logo-scroll 35s linear infinite;
+}
+
+.client-logo {
+    display: block;
+    height: 40px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+.logo-marquee:hover .logo-track {
+    animation-play-state: paused;
+}
+
+@keyframes logo-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-section {
+        padding: 45px 0;
+    }
+
+    .logo-track {
+        gap: 60px;
+        animation-duration: 28s;
+    }
+
+    .client-logo {
+        font-size: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-track {
+        animation: none;
+    }
+}
+
+
+
+
 /* ========================================
    PORTFOLIO
 ======================================== */
@@ -1272,3 +1370,6 @@ margin-top: 0px;
     }
 }
 }
+
+
+
