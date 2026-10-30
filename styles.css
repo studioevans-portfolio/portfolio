@@ -452,7 +452,7 @@ nav a:last-child:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
     .clients-section {
         padding-top: 0;
         padding-bottom: 125px;
