@@ -52,7 +52,7 @@ html {
     display: inline-block;
     padding: 10px 50px;
     margin-top: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
     transition: transform 0.5s ease, background 0.5s ease, color 0.5s ease;
 }
 
@@ -659,7 +659,7 @@ nav a:last-child:hover {
 ======================================== */
 
 .pricing-section {
-  padding: 70px 24px;
+    padding: 30px 24px 70px;
 }
 
 .pricing-container {
