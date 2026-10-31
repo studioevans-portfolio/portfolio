@@ -129,12 +129,14 @@ p {
     line-height: 1.8;
 }
 
-h1 {
-    font-family: "Google Sans", Helvetica, Arial, sans-serif;
+.hero h1 {
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 50px 0 40px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    margin: 0 0 16px;
 }
 
 .large-title {
@@ -531,10 +533,16 @@ nav a:last-child:hover {
     gap: 2rem;
     margin-bottom: 3rem;
 }
-
-.section-label {
+.section-label,
+.pricing-eyebrow {
+    display: block;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 16px;
 }
 
 .google-rating {
@@ -674,12 +682,13 @@ nav a:last-child:hover {
 }
 
 .pricing-eyebrow {
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin-bottom: 12px;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 16px !important;
+    color: #fff !important;
 }
-
 .pricing-heading h2 {
   font-size: clamp(30px, 4vw, 44px);
   line-height: 1.15;
@@ -1595,3 +1604,6 @@ margin-top: 0px;
     }
 }
 }
+
+
+

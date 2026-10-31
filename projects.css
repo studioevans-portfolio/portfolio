@@ -716,8 +716,14 @@ nav a:last-child:hover {
 }
 
 .section-label {
+    display: block;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 16px;
 }
 
 .google-rating {
