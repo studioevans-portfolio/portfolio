@@ -459,7 +459,7 @@ nav a:last-child:hover {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width : 375px ){
     .clients-section {
         padding-top: 0;
         padding-bottom: 125px;
@@ -1135,7 +1135,7 @@ footer a:hover {
    MOBILE - 768px
 ======================================== */
 
-@media (max-width : 473px ){
+@media ( max-width : 479px ){
     .small-intro {
         margin-top: 0;
     }
@@ -1211,7 +1211,7 @@ footer a:hover {
         font-size: 3.3rem;
         margin-bottom: 0;
 		line-height: 50px;
-		margin-top: -20px;
+		margin-top: 20px;
     }
    
 
@@ -1274,8 +1274,6 @@ margin-top: 0px;
 
 
 
-
-
 /* ========================================
    MOBILE - 480px
 ======================================== */
@@ -1287,6 +1285,8 @@ margin-top: 0px;
         grid-template-columns: 1fr !important;
         gap: 30px;
     }
+	
+
 }
 
 
