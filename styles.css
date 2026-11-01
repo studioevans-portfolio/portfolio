@@ -393,8 +393,7 @@ nav a:last-child:hover {
    width: min(1100px, 100%);
     max-width: 1100px;
     margin: 0 auto;
-  padding-top: 0px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
     background: #111;
 }
 
@@ -425,7 +424,7 @@ nav a:last-child:hover {
     display: flex;
     align-items: center;
     width: max-content;
-    gap: 100px;
+    gap: 150px;
     position: relative;
     left: auto;
     animation: logo-scroll 35s linear infinite;
@@ -433,7 +432,7 @@ nav a:last-child:hover {
 
 .client-logo {
     display: block;
-    height: 40px;
+    height: 50px;
     width: auto;
     max-width: 160px;
     object-fit: contain;
