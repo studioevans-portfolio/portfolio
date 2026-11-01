@@ -731,8 +731,8 @@ nav a:last-child:hover {
   align-self: flex-start;
   margin-bottom: 18px;
   padding: 7px 10px;
-  background: #fff;
-  color: #171717;
+  background: #009eff;
+  color: #fff;
   border-radius: 4px;
   font-size: 10px;
   font-weight: 600;
@@ -808,9 +808,8 @@ nav a:last-child:hover {
   display: block;
   margin-top: 16px;
   padding: 14px 18px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background: transparent;
+  border-radius: 8px;
+  background: #009eff;
   color: #fff !important;
   text-align: center;
   text-decoration: none;
