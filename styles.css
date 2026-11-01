@@ -300,10 +300,12 @@ nav a:last-child:hover {
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 60px;
-    align-items: center;
+    display: block;
+}
+
+.hero-grid > div {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #hero-image {
