@@ -590,7 +590,7 @@ nav a:last-child:hover {
 
 .about-label {
     display: block;
-    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
     font-size: 0.7rem;
     letter-spacing: 3px;
     line-height: 1.5;
