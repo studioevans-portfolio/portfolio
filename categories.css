@@ -133,8 +133,8 @@ p {
 .hero h1 {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     color: #fff;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 100;
     letter-spacing: 1.5px;
     line-height: 1.4;
     margin: 0 0 16px;
@@ -388,9 +388,9 @@ nav a:last-child:hover {
 
 .web-intro-content .section-label {
     margin-bottom: 16px;
-    font-size: 13px;
+    font-size: 10px;
     letter-spacing: 1.5px;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .web-intro-content .button-primary {
@@ -539,8 +539,8 @@ nav a:last-child:hover {
 .pricing-eyebrow {
     display: block;
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 100;
     letter-spacing: 1.5px;
     line-height: 1.4;
     color: #fff;
@@ -685,8 +685,8 @@ nav a:last-child:hover {
 
 .pricing-eyebrow {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
+    font-size: 10px !important;
+    font-weight: 100 !important;
     letter-spacing: 1.5px !important;
     margin-bottom: 16px !important;
     color: #fff !important;
