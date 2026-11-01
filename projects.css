@@ -386,6 +386,10 @@ p {
     font-family: "Google Sansh", Helvetica, Arial, sans-serif;
 }
 
+.grey-text {
+	color: #818181;
+}
+
 .small-intro {
     font-size: 0.7rem;
     font-family: "Google Sans", Helvetica, Arial, sans-serif;
