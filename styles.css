@@ -294,7 +294,7 @@ nav a:last-child:hover {
 ======================================== */
 
 .hero {
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 60px;
 }
 
@@ -1280,9 +1280,6 @@ footer a:hover {
         text-align: left;
     }
 
-    .hero {
-        margin-top: 0px;
-    }
 
     .hero-grid {
         grid-template-columns: 1fr;
