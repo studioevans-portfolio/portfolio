@@ -131,13 +131,12 @@ p {
 }
 
 h1 {
-    font-family: "Google Sans", Helvetica, Arial, sans-serif;
-    color: #fff;
+  display: block;
+    color: #999;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
     font-size: 10px;
-    font-weight: 100;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin: 50px 0 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 .large-title {
@@ -541,6 +540,102 @@ nav a:last-child:hover {
 
 .card .card-button:hover {
     color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
+.about-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+    gap: 60px;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+.about-label {
+    display: block;
+    font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 25px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+}
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content h3 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    }
+
 }
 
 /* ========================================
