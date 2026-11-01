@@ -428,6 +428,7 @@ nav a:last-child:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: stretch;
+	padding-top: 30px;
 }
 
 .card {
