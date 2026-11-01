@@ -145,6 +145,7 @@ p {
     font-size: 5.5rem;
     line-height: 75px;
     font-weight: 600;
+	padding-top: 30px;
 }
 
 .large-title span {
