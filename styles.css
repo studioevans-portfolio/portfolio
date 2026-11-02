@@ -136,14 +136,14 @@ h1 {
   font-family: "Google Sans", Helvetica, Arial, sans-serif;
     font-size: 10px;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .large-title {
     font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;
     color: #fff;
     font-size: 4.5rem;
-    line-height: 75px;
+    line-height: 70px;
     font-weight: 600;
 }
 
@@ -152,7 +152,7 @@ h1 {
 }
 /* h2 */
 .intro {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-family: "Google Sans", Helvetica, Arial, sans-serif;
     font-size: 22px;
