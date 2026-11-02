@@ -420,7 +420,7 @@ h1 {
 .intro {
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: "Google Sans", Helvetica, Arial, sans-serif;
+    font-family: "Google Sans", Helvetica, Arial, sans-serif !important;
     font-size: 22px;
     line-height: 1.7rem;
     font-weight: 100;
@@ -453,7 +453,7 @@ a:visited {
     text-decoration: none;
 }
 
-
+h2 {  font-family: "Stack Sans Notch", Helvetica, Arial, sans-serif;}
 
 
 
